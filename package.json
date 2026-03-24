@@ -1,0 +1,13 @@
+{
+  "name": "market-story-engine",
+  "private": true,
+  "workspaces": ["ingestion", "synthesis", "publisher", "web", "packages/*"],
+  "scripts": {
+    "dev": "concurrently \"npm run dev --workspace=ingestion\" \"npm run dev --workspace=synthesis\" \"npm run dev --workspace=publisher\"",
+    "build": "npm run build --workspaces"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "typescript": "^5.3.3"
+  }
+}

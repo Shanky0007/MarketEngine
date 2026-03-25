@@ -1,13 +1,26 @@
 {
   "name": "market-story-engine",
   "private": true,
-  "workspaces": ["ingestion", "synthesis", "publisher", "web", "packages/*"],
+  "workspaces": [
+    "ingestion",
+    "synthesis",
+    "publisher",
+    "web",
+    "packages/*"
+  ],
   "scripts": {
     "dev": "concurrently \"npm run dev --workspace=ingestion\" \"npm run dev --workspace=synthesis\" \"npm run dev --workspace=publisher\"",
-    "build": "npm run build --workspaces"
+    "build": "npm run build --workspaces",
+    "poc:nse": "tsx scripts/poc-nse-fii.ts"
   },
   "devDependencies": {
     "concurrently": "^8.2.2",
     "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.100.0",
+    "axios": "^1.13.6",
+    "dotenv": "^17.3.1",
+    "tsx": "^4.21.0"
   }
 }

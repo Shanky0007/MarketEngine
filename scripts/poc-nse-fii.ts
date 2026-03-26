@@ -13,23 +13,16 @@ async function runAgent() {
     `${TINYFISH_API}/automation/run-async`,
     {
       url: "https://www.nseindia.com/market-data/fii-dii-activity",
-      goal: `Extract today's FII and DII net activity from the NSE FII/DII page. Return ONLY valid JSON with this exact structure: {
+      goal: `Extract today's FII and DII net activity. Return ONLY this JSON structure (no extra text):
+{
   "date": "DD-MMM-YYYY",
-  "fii": {
-    "buy_value": number,
-    "sell_value": number,
-    "net_value": number
-  },
-  "dii": {
-    "buy_value": number,
-    "sell_value": number,
-    "net_value": number
-  },
+  "fii_net": number,
+  "dii_net": number,
   "unit": "crores INR"
 }
-If data is not available, return { "status": "unavailable", "reason": "string" }`,
-      browser_profile: "stealth",
-      proxy_config: { enabled: true, country: "IN" }
+If data unavailable, return: { "status": "unavailable" }`,
+      browser_profile: "lite",  // Use lite instead of stealth to save steps
+      proxy_config: { enabled: false }  // Disable proxy to save steps
     },
     { headers: { "X-API-Key": API_KEY, "Content-Type": "application/json" } }
   );

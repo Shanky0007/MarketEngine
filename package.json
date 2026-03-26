@@ -11,7 +11,8 @@
   "scripts": {
     "dev": "concurrently \"npm run dev --workspace=ingestion\" \"npm run dev --workspace=synthesis\" \"npm run dev --workspace=publisher\"",
     "build": "npm run build --workspaces",
-    "poc:nse": "tsx scripts/poc-nse-fii.ts"
+    "poc:nse": "tsx scripts/poc-nse-fii.ts",
+    "poc:synthesis": "tsx scripts/poc-synthesis.ts"
   },
   "devDependencies": {
     "concurrently": "^8.2.2",
@@ -21,6 +22,7 @@
     "@supabase/supabase-js": "^2.100.0",
     "axios": "^1.13.6",
     "dotenv": "^17.3.1",
+    "openai": "^6.32.0",
     "tsx": "^4.21.0"
   }
 }

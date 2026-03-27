@@ -12,7 +12,8 @@
     "dev": "concurrently \"npm run dev --workspace=ingestion\" \"npm run dev --workspace=synthesis\" \"npm run dev --workspace=publisher\"",
     "build": "npm run build --workspaces",
     "poc:nse": "tsx scripts/poc-nse-fii.ts",
-    "poc:synthesis": "tsx scripts/poc-synthesis.ts"
+    "poc:synthesis": "tsx scripts/poc-synthesis.ts",
+    "test:runner": "tsx scripts/test-runner.ts"
   },
   "devDependencies": {
     "concurrently": "^8.2.2",

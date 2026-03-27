@@ -4,7 +4,7 @@ import type { SignalPayloadType } from 'shared-types';
 const TINYFISH_API = 'https://agent.tinyfish.ai/v1';
 const API_KEY = process.env.TINYFISH_API_KEY!;
 const POLL_INTERVAL_MS = 3000;
-const AGENT_TIMEOUT_MS = 300_000; // 5 minutes
+const AGENT_TIMEOUT_MS = 180_000; // 3 minutes — enough for genuine tasks, catches stuck agents
 const CONCURRENCY_LIMIT = 2;
 
 export interface AgentConfig {
@@ -76,15 +76,24 @@ async function runSingleAgent(config: AgentConfig): Promise<SignalPayloadType> {
       }
     }
 
-    // Timeout
-    console.error(`  [Agent] ${config.signal_id} — TIMEOUT`);
+    // Timeout — cancel the run to stop burning steps
+    console.error(`  [Agent] ${config.signal_id} — TIMEOUT, cancelling run...`);
+    try {
+      await axios.post(
+        `${TINYFISH_API}/runs/${runId}/cancel`,
+        {},
+        { headers: { "X-API-Key": API_KEY } }
+      );
+      console.error(`  [Agent] ${config.signal_id} — run cancelled`);
+    } catch { /* ignore cancel errors */ }
+
     return {
       signal_id: config.signal_id,
       source_url: config.url,
       extracted_at: new Date().toISOString(),
       status: 'failed',
       data: {},
-      error: `Agent timed out after ${AGENT_TIMEOUT_MS / 1000}s`
+      error: `Agent timed out after ${AGENT_TIMEOUT_MS / 1000}s — run cancelled`
     };
 
   } catch (err: unknown) {

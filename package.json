@@ -16,6 +16,7 @@
     "test:runner": "tsx scripts/test-runner.ts"
   },
   "devDependencies": {
+    "@types/uuid": "^10.0.0",
     "concurrently": "^8.2.2",
     "typescript": "^5.3.3"
   },
@@ -24,6 +25,7 @@
     "axios": "^1.13.6",
     "dotenv": "^17.3.1",
     "openai": "^6.32.0",
-    "tsx": "^4.21.0"
+    "tsx": "^4.21.0",
+    "uuid": "^13.0.0"
   }
 }

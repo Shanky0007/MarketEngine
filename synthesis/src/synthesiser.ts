@@ -4,7 +4,13 @@ import { AggregatedSignals, BriefOutput } from 'shared-types';
 import type { AggregatedSignalsType, BriefOutputType, AuditRecordType } from 'shared-types';
 import { runAllGates } from './gates';
 
-const client = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
+let _client: OpenAI | null = null;
+function getClient(): OpenAI {
+  if (!_client) {
+    _client = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
+  }
+  return _client;
+}
 
 const SYSTEM_PROMPT = `You are the synthesis engine for Market Story Engine, an Indian financial market intelligence product.
 
@@ -68,7 +74,7 @@ export async function synthesiseBrief(
   console.log('[Synthesis] Calling OpenAI GPT-4o...');
   let rawOutput = '';
 
-  const response = await client.chat.completions.create({
+  const response = await getClient().chat.completions.create({
     model: 'gpt-4o',
     max_tokens: 2500,
     response_format: { type: "json_object" },

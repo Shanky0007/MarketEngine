@@ -5,7 +5,7 @@ const TINYFISH_API = 'https://agent.tinyfish.ai/v1';
 const API_KEY = process.env.TINYFISH_API_KEY!;
 const POLL_INTERVAL_MS = 3000;
 const AGENT_TIMEOUT_MS = 180_000; // 3 minutes — enough for genuine tasks, catches stuck agents
-const CONCURRENCY_LIMIT = 2;
+const CONCURRENCY_LIMIT = 6; // Pro Plus allows 20, but 6 is safe for 12 agents (2 batches)
 
 export interface AgentConfig {
   signal_id: string;

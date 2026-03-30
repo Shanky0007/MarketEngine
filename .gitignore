@@ -1,7 +1,10 @@
 node_modules
 dist
 .env
+.env.local
 .next
 *.pyc
+output/
+ingestion/output/
 .vscode 
 MarketStoryEngine_ExecutionPlan_v1.md

@@ -2,15 +2,19 @@ import axios from 'axios';
 import type { SignalPayloadType } from 'shared-types';
 
 const TINYFISH_API = 'https://agent.tinyfish.ai/v1';
-const API_KEY = process.env.TINYFISH_API_KEY!;
 const POLL_INTERVAL_MS = 3000;
-const AGENT_TIMEOUT_MS = 180_000; // 3 minutes — enough for genuine tasks, catches stuck agents
-const CONCURRENCY_LIMIT = 6; // Pro Plus allows 20, but 6 is safe for 12 agents (2 batches)
+const AGENT_TIMEOUT_MS = 300_000; // 5 minutes — generous for complex sites
+const CONCURRENCY_LIMIT = 6;
+
+function getApiKey(): string {
+  return process.env.TINYFISH_API_KEY!;
+}
 
 export interface AgentConfig {
   signal_id: string;
   url: string;
   goal: string;
+  timeout_ms?: number;
 }
 
 async function runSingleAgent(config: AgentConfig): Promise<SignalPayloadType> {
@@ -25,19 +29,19 @@ async function runSingleAgent(config: AgentConfig): Promise<SignalPayloadType> {
         browser_profile: "lite",
         proxy_config: { enabled: false }
       },
-      { headers: { "X-API-Key": API_KEY, "Content-Type": "application/json" } }
+      { headers: { "X-API-Key": getApiKey(), "Content-Type": "application/json" } }
     );
 
     const runId: string = runRes.data.run_id;
     console.log(`  [Agent] ${config.signal_id} — run_id: ${runId}`);
 
     // Poll until complete or timeout
-    const deadline = Date.now() + AGENT_TIMEOUT_MS;
+    const deadline = Date.now() + (config.timeout_ms || AGENT_TIMEOUT_MS);
     while (Date.now() < deadline) {
       await new Promise(r => setTimeout(r, POLL_INTERVAL_MS));
       const pollRes = await axios.get(
         `${TINYFISH_API}/runs/${runId}`,
-        { headers: { "X-API-Key": API_KEY } }
+        { headers: { "X-API-Key": getApiKey() } }
       );
 
       const { status, result } = pollRes.data;
@@ -82,18 +86,19 @@ async function runSingleAgent(config: AgentConfig): Promise<SignalPayloadType> {
       await axios.post(
         `${TINYFISH_API}/runs/${runId}/cancel`,
         {},
-        { headers: { "X-API-Key": API_KEY } }
+        { headers: { "X-API-Key": getApiKey() } }
       );
       console.error(`  [Agent] ${config.signal_id} — run cancelled`);
     } catch { /* ignore cancel errors */ }
 
+    const usedTimeout = config.timeout_ms || AGENT_TIMEOUT_MS;
     return {
       signal_id: config.signal_id,
       source_url: config.url,
       extracted_at: new Date().toISOString(),
       status: 'failed',
       data: {},
-      error: `Agent timed out after ${AGENT_TIMEOUT_MS / 1000}s — run cancelled`
+      error: `Agent timed out after ${usedTimeout / 1000}s — run cancelled`
     };
 
   } catch (err: unknown) {

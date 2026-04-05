@@ -1,0 +1,215 @@
+2026-03-31 00:38:02: ⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+2026-03-31 00:38:02:  We detected multiple lockfiles and selected the directory of D:\pnpm-lock.yaml as the root directory.
+2026-03-31 00:38:02:  To silence this warning, set `turbopack.root` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+2026-03-31 00:38:02:    See https://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory for more information.
+2026-03-31 00:38:02:  Detected additional lockfiles: 
+2026-03-31 00:38:02:    * D:\MarketEngine\package-lock.json
+2026-03-31 00:38:02: 
+2026-03-31 00:55:19: ⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+2026-03-31 00:55:19:  We detected multiple lockfiles and selected the directory of D:\pnpm-lock.yaml as the root directory.
+2026-03-31 00:55:19:  To silence this warning, set `turbopack.root` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+2026-03-31 00:55:19:    See https://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory for more information.
+2026-03-31 00:55:19:  Detected additional lockfiles: 
+2026-03-31 00:55:19:    * D:\MarketEngine\package-lock.json
+2026-03-31 00:55:19: 
+2026-03-31 00:55:29: ⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+2026-03-31 00:55:29:  We detected multiple lockfiles and selected the directory of D:\pnpm-lock.yaml as the root directory.
+2026-03-31 00:55:29:  To silence this warning, set `turbopack.root` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+2026-03-31 00:55:29:    See https://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory for more information.
+2026-03-31 00:55:29:  Detected additional lockfiles: 
+2026-03-31 00:55:29:    * D:\MarketEngine\package-lock.json
+2026-03-31 00:55:29: 
+2026-03-31 03:32:59: ⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+2026-03-31 03:32:59:  We detected multiple lockfiles and selected the directory of D:\pnpm-lock.yaml as the root directory.
+2026-03-31 03:32:59:  To silence this warning, set `turbopack.root` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+2026-03-31 03:32:59:    See https://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory for more information.
+2026-03-31 03:32:59:  Detected additional lockfiles: 
+2026-03-31 03:32:59:    * D:\MarketEngine\package-lock.json
+2026-03-31 03:32:59: 
+2026-03-31 12:32:25: ⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+2026-03-31 12:32:25:  We detected multiple lockfiles and selected the directory of D:\pnpm-lock.yaml as the root directory.
+2026-03-31 12:32:25:  To silence this warning, set `turbopack.root` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+2026-03-31 12:32:25:    See https://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory for more information.
+2026-03-31 12:32:25:  Detected additional lockfiles: 
+2026-03-31 12:32:25:    * D:\MarketEngine\package-lock.json
+2026-03-31 12:32:25: 
+2026-03-31 16:38:21: ⨯ Error: connect ECONNREFUSED 127.0.0.1:5432
+2026-03-31 16:38:21:     at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:5432)
+2026-03-31 16:38:21:     at async getLatestBrief (lib\db.ts:23:15)
+2026-03-31 16:38:21:     at async HomePage (app\page.tsx:11:18)
+2026-03-31 16:38:21:   21 |
+2026-03-31 16:38:21:   22 | export async function getLatestBrief(): Promise<BriefRow | null> {
+2026-03-31 16:38:21: > 23 |   const res = await pool.query(
+2026-03-31 16:38:21:      |               ^
+2026-03-31 16:38:21:   24 |     `SELECT id, brief_date::text as brief_date, beginner_headline, beginner_body, beginner...
+2026-03-31 16:38:21:   25 |   );
+2026-03-31 16:38:21:   26 |   return res.rows[0] || null; {
+2026-03-31 16:38:21:   errno: -4078,
+2026-03-31 16:38:21:   code: 'ECONNREFUSED',
+2026-03-31 16:38:21:   syscall: 'connect',
+2026-03-31 16:38:21:   address: '127.0.0.1',
+2026-03-31 16:38:21:   port: 5432,
+2026-03-31 16:38:21:   digest: '2868730758'
+2026-03-31 16:38:21: }
+2026-03-31 16:38:22: ⨯ Error: connect ECONNREFUSED 127.0.0.1:5432
+2026-03-31 16:38:22:     at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:5432)
+2026-03-31 16:38:22:     at async getLatestBrief (lib\db.ts:23:15)
+2026-03-31 16:38:22:     at async HomePage (app\page.tsx:11:18)
+2026-03-31 16:38:22:   21 |
+2026-03-31 16:38:22:   22 | export async function getLatestBrief(): Promise<BriefRow | null> {
+2026-03-31 16:38:22: > 23 |   const res = await pool.query(
+2026-03-31 16:38:22:      |               ^
+2026-03-31 16:38:22:   24 |     `SELECT id, brief_date::text as brief_date, beginner_headline, beginner_body, beginner...
+2026-03-31 16:38:22:   25 |   );
+2026-03-31 16:38:22:   26 |   return res.rows[0] || null; {
+2026-03-31 16:38:22:   errno: -4078,
+2026-03-31 16:38:22:   code: 'ECONNREFUSED',
+2026-03-31 16:38:22:   syscall: 'connect',
+2026-03-31 16:38:22:   address: '127.0.0.1',
+2026-03-31 16:38:22:   port: 5432,
+2026-03-31 16:38:22:   digest: '2868730758'
+2026-03-31 16:38:22: }
+2026-03-31 16:38:22: [browser] Uncaught Error: connect ECONNREFUSED 127.0.0.1:5432
+2026-03-31 16:38:22:     at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:5432)
+2026-03-31 16:38:22:     at getLatestBrief (lib\db.ts:23:15)
+2026-03-31 16:38:22:     at HomePage (app\page.tsx:11:18)
+2026-03-31 16:38:22:     at resolveErrorDev (.next\dev\static\chunks\08_-_next_dist_compiled_react-server-dom-turbopack_0bcb~h2._.js:1919:105)
+2026-03-31 16:38:22:     at processFullStringRow (.next\dev\static\chunks\08_-_next_dist_compiled_react-server-dom-turbopack_0bcb~h2._.js:2434:29)
+2026-03-31 16:38:22:     at processFullBinaryRow (.next\dev\static\chunks\08_-_next_dist_compiled_react-server-dom-turbopack_0bcb~h2._.js:2393:9)
+2026-03-31 16:38:22:     at processBinaryChunk (.next\dev\static\chunks\08_-_next_dist_compiled_react-server-dom-turbopack_0bcb~h2._.js:2502:221)
+2026-03-31 16:38:22:     at progress (.next\dev\static\chunks\08_-_next_dist_compiled_react-server-dom-turbopack_0bcb~h2._.js:2689:13)
+2026-03-31 16:38:22:   21 |
+2026-03-31 16:38:22:   22 | export async function getLatestBrief(): Promise<BriefRow | null> {
+2026-03-31 16:38:22: > 23 |   const res = await pool.query(
+2026-03-31 16:38:22:      |               ^
+2026-03-31 16:38:22:   24 |     `SELECT id, brief_date::text as brief_date, beginner_headline, beginner_body, beginner...
+2026-03-31 16:38:22:   25 |   );
+2026-03-31 16:38:22:   26 |   return res.rows[0] || null;
+2026-03-31 19:51:52: ⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+2026-03-31 19:51:52:  We detected multiple lockfiles and selected the directory of D:\pnpm-lock.yaml as the root directory.
+2026-03-31 19:51:52:  To silence this warning, set `turbopack.root` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+2026-03-31 19:51:52:    See https://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory for more information.
+2026-03-31 19:51:52:  Detected additional lockfiles: 
+2026-03-31 19:51:52:    * D:\MarketEngine\package-lock.json
+2026-03-31 19:51:52: 
+2026-03-31 19:52:00: ⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+2026-03-31 19:52:00:  We detected multiple lockfiles and selected the directory of D:\pnpm-lock.yaml as the root directory.
+2026-03-31 19:52:00:  To silence this warning, set `turbopack.root` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+2026-03-31 19:52:00:    See https://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory for more information.
+2026-03-31 19:52:00:  Detected additional lockfiles: 
+2026-03-31 19:52:00:    * D:\MarketEngine\package-lock.json
+2026-03-31 19:52:00: 
+2026-04-02 14:53:20: ⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+2026-04-02 14:53:20:  We detected multiple lockfiles and selected the directory of D:\pnpm-lock.yaml as the root directory.
+2026-04-02 14:53:20:  To silence this warning, set `turbopack.root` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+2026-04-02 14:53:20:    See https://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory for more information.
+2026-04-02 14:53:20:  Detected additional lockfiles: 
+2026-04-02 14:53:20:    * D:\MarketEngine\package-lock.json
+2026-04-02 14:53:20: 
+2026-04-02 22:59:33: ⨯ error: password authentication failed for user "mse"
+2026-04-02 22:59:33:     at async getLatestBrief (lib\db.ts:23:15)
+2026-04-02 22:59:33:     at async HomePage (app\page.tsx:11:18)
+2026-04-02 22:59:33:   21 |
+2026-04-02 22:59:33:   22 | export async function getLatestBrief(): Promise<BriefRow | null> {
+2026-04-02 22:59:33: > 23 |   const res = await pool.query(
+2026-04-02 22:59:33:      |               ^
+2026-04-02 22:59:33:   24 |     `SELECT id, brief_date::text as brief_date, beginner_headline, beginner_body, beginner...
+2026-04-02 22:59:33:   25 |   );
+2026-04-02 22:59:33:   26 |   return res.rows[0] || null; {
+2026-04-02 22:59:33:   length: 99,
+2026-04-02 22:59:33:   severity: 'FATAL',
+2026-04-02 22:59:33:   code: '28P01',
+2026-04-02 22:59:33:   detail: undefined,
+2026-04-02 22:59:33:   hint: undefined,
+2026-04-02 22:59:33:   position: undefined,
+2026-04-02 22:59:33:   internalPosition: undefined,
+2026-04-02 22:59:33:   internalQuery: undefined,
+2026-04-02 22:59:33:   where: undefined,
+2026-04-02 22:59:33:   schema: undefined,
+2026-04-02 22:59:33:   table: undefined,
+2026-04-02 22:59:33:   column: undefined,
+2026-04-02 22:59:33:   dataType: undefined,
+2026-04-02 22:59:33:   constraint: undefined,
+2026-04-02 22:59:33:   file: 'auth.c',
+2026-04-02 22:59:33:   line: '331',
+2026-04-02 22:59:33:   routine: 'auth_failed',
+2026-04-02 22:59:33:   digest: '1891030502'
+2026-04-02 22:59:33: }
+2026-04-02 23:05:44: ⨯ error: password authentication failed for user "mse"
+2026-04-02 23:05:44:     at async getLatestBrief (lib\db.ts:23:15)
+2026-04-02 23:05:44:     at async HomePage (app\page.tsx:11:18)
+2026-04-02 23:05:44:   21 |
+2026-04-02 23:05:44:   22 | export async function getLatestBrief(): Promise<BriefRow | null> {
+2026-04-02 23:05:44: > 23 |   const res = await pool.query(
+2026-04-02 23:05:44:      |               ^
+2026-04-02 23:05:44:   24 |     `SELECT id, brief_date::text as brief_date, beginner_headline, beginner_body, beginner...
+2026-04-02 23:05:44:   25 |   );
+2026-04-02 23:05:44:   26 |   return res.rows[0] || null; {
+2026-04-02 23:05:44:   length: 99,
+2026-04-02 23:05:44:   severity: 'FATAL',
+2026-04-02 23:05:44:   code: '28P01',
+2026-04-02 23:05:44:   detail: undefined,
+2026-04-02 23:05:44:   hint: undefined,
+2026-04-02 23:05:44:   position: undefined,
+2026-04-02 23:05:44:   internalPosition: undefined,
+2026-04-02 23:05:44:   internalQuery: undefined,
+2026-04-02 23:05:44:   where: undefined,
+2026-04-02 23:05:44:   schema: undefined,
+2026-04-02 23:05:44:   table: undefined,
+2026-04-02 23:05:44:   column: undefined,
+2026-04-02 23:05:44:   dataType: undefined,
+2026-04-02 23:05:44:   constraint: undefined,
+2026-04-02 23:05:44:   file: 'auth.c',
+2026-04-02 23:05:44:   line: '331',
+2026-04-02 23:05:44:   routine: 'auth_failed',
+2026-04-02 23:05:44:   digest: '1891030502'
+2026-04-02 23:05:44: }
+2026-04-03 00:42:05: ⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+2026-04-03 00:42:05:  We detected multiple lockfiles and selected the directory of D:\pnpm-lock.yaml as the root directory.
+2026-04-03 00:42:05:  To silence this warning, set `turbopack.root` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+2026-04-03 00:42:05:    See https://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory for more information.
+2026-04-03 00:42:05:  Detected additional lockfiles: 
+2026-04-03 00:42:05:    * D:\MarketEngine\package-lock.json
+2026-04-03 00:42:05: 
+2026-04-03 15:33:33: ⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+2026-04-03 15:33:33:  We detected multiple lockfiles and selected the directory of D:\pnpm-lock.yaml as the root directory.
+2026-04-03 15:33:33:  To silence this warning, set `turbopack.root` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+2026-04-03 15:33:33:    See https://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory for more information.
+2026-04-03 15:33:33:  Detected additional lockfiles: 
+2026-04-03 15:33:33:    * D:\MarketEngine\package-lock.json
+2026-04-03 15:33:33: 
+2026-04-03 15:33:42: ⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+2026-04-03 15:33:42:  We detected multiple lockfiles and selected the directory of D:\pnpm-lock.yaml as the root directory.
+2026-04-03 15:33:42:  To silence this warning, set `turbopack.root` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+2026-04-03 15:33:42:    See https://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory for more information.
+2026-04-03 15:33:42:  Detected additional lockfiles: 
+2026-04-03 15:33:42:    * D:\MarketEngine\package-lock.json
+2026-04-03 15:33:42: 
+2026-04-03 15:35:50: ⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+2026-04-03 15:35:50:  We detected multiple lockfiles and selected the directory of D:\pnpm-lock.yaml as the root directory.
+2026-04-03 15:35:50:  To silence this warning, set `turbopack.root` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+2026-04-03 15:35:50:    See https://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory for more information.
+2026-04-03 15:35:50:  Detected additional lockfiles: 
+2026-04-03 15:35:50:    * D:\MarketEngine\package-lock.json
+2026-04-03 15:35:50: 
+2026-04-04 13:49:57: ⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+2026-04-04 13:49:57:  We detected multiple lockfiles and selected the directory of D:\pnpm-lock.yaml as the root directory.
+2026-04-04 13:49:57:  To silence this warning, set `turbopack.root` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+2026-04-04 13:49:57:    See https://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory for more information.
+2026-04-04 13:49:57:  Detected additional lockfiles: 
+2026-04-04 13:49:57:    * D:\MarketEngine\package-lock.json
+2026-04-04 13:49:57: 
+2026-04-04 21:31:26: ⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+2026-04-04 21:31:26:  We detected multiple lockfiles and selected the directory of D:\pnpm-lock.yaml as the root directory.
+2026-04-04 21:31:26:  To silence this warning, set `turbopack.root` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+2026-04-04 21:31:26:    See https://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory for more information.
+2026-04-04 21:31:26:  Detected additional lockfiles: 
+2026-04-04 21:31:26:    * D:\MarketEngine\package-lock.json
+2026-04-04 21:31:26: 
+2026-04-06 00:26:39: ⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+2026-04-06 00:26:39:  We detected multiple lockfiles and selected the directory of D:\pnpm-lock.yaml as the root directory.
+2026-04-06 00:26:39:  To silence this warning, set `turbopack.root` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+2026-04-06 00:26:39:    See https://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory for more information.
+2026-04-06 00:26:39:  Detected additional lockfiles: 
+2026-04-06 00:26:39:    * D:\MarketEngine\package-lock.json
+2026-04-06 00:26:39: 

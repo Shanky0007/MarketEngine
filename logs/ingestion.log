@@ -1,0 +1,315 @@
+2026-03-31 00:38:02: [dotenv@17.3.1] injecting env (9) from ..\.env -- tip: 🤖 agentic secret storage: https://dotenvx.com/as2
+2026-03-31 00:38:02: Ingestion service running on port 3001
+2026-03-31 00:38:02: Cron scheduled: 7:00am IST daily
+2026-03-31 00:38:02: Manual trigger: POST /api/trigger
+2026-03-31 00:38:02: Health check: GET /health
+2026-03-31 00:55:24: [dotenv@17.3.1] injecting env (9) from ..\.env -- tip: ⚙️  enable debug logging with { debug: true }
+2026-03-31 00:55:24: Ingestion service running on port 3001
+2026-03-31 00:55:24: Cron scheduled: 7:00am IST daily
+2026-03-31 00:55:24: Manual trigger: POST /api/trigger
+2026-03-31 00:55:24: Health check: GET /health
+2026-03-31 00:55:31: [dotenv@17.3.1] injecting env (9) from ..\.env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+2026-03-31 00:55:31: Ingestion service running on port 3001
+2026-03-31 00:55:31: Cron scheduled: 7:00am IST daily
+2026-03-31 00:55:31: Manual trigger: POST /api/trigger
+2026-03-31 00:55:31: Health check: GET /health
+2026-03-31 01:30:00: [Cron] 7:00am IST — firing daily pipeline
+2026-03-31 01:30:00: 
+2026-03-31 01:30:00: ========================================
+2026-03-31 01:30:00: [Pipeline] Starting daily brief for 2026-03-30
+2026-03-31 01:30:00: ========================================
+2026-03-31 01:30:00: 
+2026-03-31 01:30:00: [Pipeline] Step 1/4 — Ingestion
+2026-03-31 01:30:00: [Ingestion] Running 12 agents (concurrency: 6)...
+2026-03-31 01:30:00: [Ingestion] Batch 1/2: fii_dii, block_deals, insider_trades, option_chain, nifty_50, us_markets
+2026-03-31 01:30:00:   [Agent] fii_dii — starting...
+2026-03-31 01:30:00:   [Agent] block_deals — starting...
+2026-03-31 01:30:00:   [Agent] insider_trades — starting...
+2026-03-31 01:30:00:   [Agent] option_chain — starting...
+2026-03-31 01:30:00:   [Agent] nifty_50 — starting...
+2026-03-31 01:30:00:   [Agent] us_markets — starting...
+2026-03-31 01:30:02:   [Agent] us_markets — run_id: 77327b4d-10d6-4c13-887b-598a3b001d8b
+2026-03-31 01:30:02:   [Agent] block_deals — run_id: e2394993-dff9-450c-97d1-61a1371683db
+2026-03-31 01:30:03:   [Agent] insider_trades — run_id: 47854eb9-0f1d-403f-9be8-977969ee2ac8
+2026-03-31 01:30:03:   [Agent] nifty_50 — run_id: 5c0e6db3-b895-4efd-bf0f-c44f6d942c88
+2026-03-31 01:30:03:   [Agent] option_chain — run_id: 902b89e2-1460-4a3e-9d49-5c6a7539c363
+2026-03-31 01:30:03:   [Agent] fii_dii — run_id: 550034fe-9c0a-4bc2-8d1c-da8c763e3203
+2026-03-31 01:30:29:   [Agent] us_markets — ok
+2026-03-31 01:31:31:   [Agent] nifty_50 — ok
+2026-03-31 01:37:20:   [Agent] block_deals — unavailable
+2026-03-31 01:38:05:   [Agent] insider_trades — TIMEOUT, cancelling run...
+2026-03-31 01:38:05:   [Agent] insider_trades — run cancelled
+2026-03-31 01:38:06:   [Agent] option_chain — TIMEOUT, cancelling run...
+2026-03-31 01:38:06:   [Agent] fii_dii — TIMEOUT, cancelling run...
+2026-03-31 01:38:06:   [Agent] option_chain — run cancelled
+2026-03-31 01:38:06:   [Agent] fii_dii — run cancelled
+2026-03-31 01:38:06: [Ingestion] Batch 2/2: usd_inr, brent_crude, gold_mcx, earnings_bse, rbi_releases, asia_cues
+2026-03-31 01:38:06:   [Agent] usd_inr — starting...
+2026-03-31 01:38:06:   [Agent] brent_crude — starting...
+2026-03-31 01:38:06:   [Agent] gold_mcx — starting...
+2026-03-31 01:38:06:   [Agent] earnings_bse — starting...
+2026-03-31 01:38:06:   [Agent] rbi_releases — starting...
+2026-03-31 01:38:06:   [Agent] asia_cues — starting...
+2026-03-31 01:38:07:   [Agent] brent_crude — run_id: ab4cdb04-c9ec-48a3-8829-013f58d5971e
+2026-03-31 01:38:07:   [Agent] usd_inr — run_id: 3b68275a-edb7-4651-8325-a658c6b598a4
+2026-03-31 01:38:07:   [Agent] rbi_releases — run_id: 111bb64c-c0b3-4aa4-b1e6-611608043cee
+2026-03-31 01:38:07:   [Agent] asia_cues — run_id: 5bc21ca3-21ce-43bc-a471-138280a6b2bb
+2026-03-31 01:38:07:   [Agent] gold_mcx — run_id: 2b85d601-764d-4bb9-a9ee-9eb482ff1ccd
+2026-03-31 01:38:07:   [Agent] earnings_bse — run_id: 1989c518-e559-448e-905c-ff45b44c3ac9
+2026-03-31 01:40:34:   [Agent] brent_crude — ok
+2026-03-31 01:40:54:   [Agent] earnings_bse — ok
+2026-03-31 01:41:39:   [Agent] usd_inr — ok
+2026-03-31 01:41:40:   [Agent] gold_mcx — ok
+2026-03-31 01:43:06:   [Agent] asia_cues — ok
+2026-03-31 01:43:09:   [Agent] rbi_releases — TIMEOUT, cancelling run...
+2026-03-31 01:43:09:   [Agent] rbi_releases — run cancelled
+2026-03-31 01:43:09: [Ingestion] Done in 789.5s — 7 ok, 1 unavailable, 4 failed
+2026-03-31 01:43:09: [Orchestrator] Ingestion summary:
+2026-03-31 01:43:09:   ❌ fii_dii: failed
+2026-03-31 01:43:09:   ⚠️ block_deals: unavailable
+2026-03-31 01:43:09:   ❌ insider_trades: failed
+2026-03-31 01:43:09:   ❌ option_chain: failed
+2026-03-31 01:43:09:   ✅ nifty_50: ok
+2026-03-31 01:43:09:   ✅ us_markets: ok
+2026-03-31 01:43:09:   ✅ usd_inr: ok
+2026-03-31 01:43:09:   ✅ brent_crude: ok
+2026-03-31 01:43:09:   ✅ gold_mcx: ok
+2026-03-31 01:43:09:   ✅ earnings_bse: ok
+2026-03-31 01:43:09:   ❌ rbi_releases: failed
+2026-03-31 01:43:09:   ✅ asia_cues: ok
+2026-03-31 01:43:09: [Alerts] ⚠️ 4 signals failed for 2026-03-30: fii_dii, insider_trades, option_chain, rbi_releases
+2026-03-31 01:43:09: 
+2026-03-31 01:43:09: [Pipeline] Step 2/4 — Synthesis
+2026-03-31 01:43:09: [Synthesis] Calling OpenAI GPT-4o...
+2026-03-31 01:43:29: [Synthesis] ✅ Valid brief JSON parsed
+2026-03-31 01:43:29: [Gates] ✅ All three gates passed
+2026-03-31 01:43:29: 
+2026-03-31 01:43:29: [Pipeline] Step 3/4 — Saving to database
+2026-03-31 12:32:25: [dotenv@17.3.1] injecting env (9) from ..\.env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+2026-03-31 12:32:25: Ingestion service running on port 3001
+2026-03-31 12:32:25: Cron scheduled: 7:00am IST daily
+2026-03-31 12:32:25: Manual trigger: POST /api/trigger
+2026-03-31 12:32:25: Health check: GET /health
+2026-04-02 14:53:20: [dotenv@17.3.1] injecting env (9) from ..\.env -- tip: 🛡️ auth for agents: https://vestauth.com
+2026-04-02 14:53:20: Ingestion service running on port 3001
+2026-04-02 14:53:20: Cron scheduled: 7:00am IST daily
+2026-04-02 14:53:20: Manual trigger: POST /api/trigger
+2026-04-02 14:53:20: Health check: GET /health
+2026-04-03 00:42:13: [dotenv@17.3.1] injecting env (9) from ..\.env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+2026-04-03 00:42:14: Ingestion service running on port 3001
+2026-04-03 00:42:14: Cron scheduled: 7:00am IST daily
+2026-04-03 00:42:14: Manual trigger: POST /api/trigger
+2026-04-03 00:42:14: Health check: GET /health
+2026-04-03 01:30:00: [Cron] 7:00am IST — firing daily pipeline
+2026-04-03 01:30:00: 
+2026-04-03 01:30:00: ========================================
+2026-04-03 01:30:00: [Pipeline] Starting daily brief for 2026-04-02
+2026-04-03 01:30:00: ========================================
+2026-04-03 01:30:00: 
+2026-04-03 01:30:00: [Pipeline] Step 1/4 — Ingestion
+2026-04-03 01:30:00: [Ingestion] Running 12 agents (concurrency: 6)...
+2026-04-03 01:30:00: [Ingestion] Batch 1/2: fii_dii, block_deals, insider_trades, option_chain, nifty_50, us_markets
+2026-04-03 01:30:00:   [Agent] fii_dii — starting...
+2026-04-03 01:30:00:   [Agent] block_deals — starting...
+2026-04-03 01:30:00:   [Agent] insider_trades — starting...
+2026-04-03 01:30:00:   [Agent] option_chain — starting...
+2026-04-03 01:30:00:   [Agent] nifty_50 — starting...
+2026-04-03 01:30:00:   [Agent] us_markets — starting...
+2026-04-03 01:30:02:   [Agent] insider_trades — run_id: cef02d01-ac66-44c2-b6f1-3a221db7acb6
+2026-04-03 01:30:03:   [Agent] nifty_50 — run_id: e7c6fa72-8c98-4b27-91a3-1fd7a2355ae6
+2026-04-03 01:30:03:   [Agent] option_chain — run_id: c1b4b63b-9c83-42b8-ae72-d7db2d7670a9
+2026-04-03 01:30:03:   [Agent] fii_dii — run_id: 79b88a5b-dcb6-4dbd-99ac-986f02260bd1
+2026-04-03 01:30:03:   [Agent] us_markets — run_id: 4a1c06d6-97d3-45db-bc24-12d0ae1b5f7a
+2026-04-03 01:30:03:   [Agent] block_deals — run_id: a0530016-7c5a-4fae-8a32-e3359a088a19
+2026-04-03 01:30:26:   [Agent] nifty_50 — ok
+2026-04-03 01:31:49:   [Agent] us_markets — ok
+2026-04-03 01:36:38:   [Agent] block_deals — ok
+2026-04-03 01:37:00:   [Agent] insider_trades — ok
+2026-04-03 01:38:04:   [Agent] fii_dii — TIMEOUT, cancelling run...
+2026-04-03 01:38:04:   [Agent] fii_dii — run cancelled
+2026-04-03 01:38:05:   [Agent] option_chain — TIMEOUT, cancelling run...
+2026-04-03 01:38:06:   [Agent] option_chain — run cancelled
+2026-04-03 01:38:06: [Ingestion] Batch 2/2: usd_inr, brent_crude, gold_mcx, earnings_bse, rbi_releases, asia_cues
+2026-04-03 01:38:06:   [Agent] usd_inr — starting...
+2026-04-03 01:38:06:   [Agent] brent_crude — starting...
+2026-04-03 01:38:06:   [Agent] gold_mcx — starting...
+2026-04-03 01:38:06:   [Agent] earnings_bse — starting...
+2026-04-03 01:38:06:   [Agent] rbi_releases — starting...
+2026-04-03 01:38:06:   [Agent] asia_cues — starting...
+2026-04-03 01:38:06:   [Agent] usd_inr — run_id: c06d564f-e19d-40d3-8a9e-ea1c597a34a8
+2026-04-03 01:38:07:   [Agent] earnings_bse — run_id: 6e9b2467-ab5f-4e31-bd6f-7d4911f53dd6
+2026-04-03 01:38:07:   [Agent] rbi_releases — run_id: e1b5a3e9-a39c-4583-bbcf-38f9d8253252
+2026-04-03 01:38:07:   [Agent] gold_mcx — run_id: 7de650eb-46db-46e4-9d04-eb7b4d0fcee9
+2026-04-03 01:38:07:   [Agent] brent_crude — run_id: 8cb5bcff-ba83-4123-bb04-1c071ea52d6d
+2026-04-03 01:38:07:   [Agent] asia_cues — run_id: ac359d20-e145-4922-9104-cb48c0af9c80
+2026-04-03 01:38:26:   [Agent] usd_inr — ok
+2026-04-03 01:40:54:   [Agent] earnings_bse — ok
+2026-04-03 01:41:31:   [Agent] rbi_releases — ok
+2026-04-03 01:41:41:   [Agent] asia_cues — ok
+2026-04-03 01:42:07:   [Agent] gold_mcx — ok
+2026-04-03 01:43:09:   [Agent] brent_crude — TIMEOUT, cancelling run...
+2026-04-03 01:43:09:   [Agent] brent_crude — run cancelled
+2026-04-03 01:43:09: [Ingestion] Done in 789.4s — 9 ok, 0 unavailable, 3 failed
+2026-04-03 01:43:09: [Orchestrator] Ingestion summary:
+2026-04-03 01:43:09:   ❌ fii_dii: failed
+2026-04-03 01:43:09:   ✅ block_deals: ok
+2026-04-03 01:43:09:   ✅ insider_trades: ok
+2026-04-03 01:43:09:   ❌ option_chain: failed
+2026-04-03 01:43:09:   ✅ nifty_50: ok
+2026-04-03 01:43:09:   ✅ us_markets: ok
+2026-04-03 01:43:09:   ✅ usd_inr: ok
+2026-04-03 01:43:09:   ❌ brent_crude: failed
+2026-04-03 01:43:09:   ✅ gold_mcx: ok
+2026-04-03 01:43:09:   ✅ earnings_bse: ok
+2026-04-03 01:43:09:   ✅ rbi_releases: ok
+2026-04-03 01:43:09:   ✅ asia_cues: ok
+2026-04-03 01:43:09: 
+2026-04-03 01:43:09: [Pipeline] Step 2/4 — Synthesis
+2026-04-03 01:43:09: [Alerts] ⚠️ 3 signals failed for 2026-04-02: fii_dii, option_chain, brent_crude
+2026-04-03 01:43:09: [Synthesis] Calling OpenAI GPT-4o...
+2026-04-03 01:43:26: [Synthesis] ✅ Valid brief JSON parsed
+2026-04-03 01:43:26: [Gates] ✅ All three gates passed
+2026-04-03 01:43:26: 
+2026-04-03 01:43:26: [Pipeline] Step 3/4 — Saving to database
+2026-04-03 01:43:26: [Pipeline] Database error: error: password authentication failed for user "mse"
+2026-04-03 01:43:26:     at D:\MarketEngine\node_modules\pg-pool\index.js:45:11
+2026-04-03 01:43:26:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-04-03 01:43:26:     at async runDailyPipeline (D:\MarketEngine\ingestion\src\pipeline.ts:46:7)
+2026-04-03 01:43:26:     at async import_node_cron.default.schedule.timezone (D:\MarketEngine\ingestion\src\index.ts:32:5)
+2026-04-03 01:43:26:     at async Timeout._onTimeout (D:\MarketEngine\node_modules\node-cron\src\scheduler\runner.ts:100:30) {
+2026-04-03 01:43:26:   length: 99,
+2026-04-03 01:43:26:   severity: 'FATAL',
+2026-04-03 01:43:26:   code: '28P01',
+2026-04-03 01:43:26:   detail: undefined,
+2026-04-03 01:43:26:   hint: undefined,
+2026-04-03 01:43:26:   position: undefined,
+2026-04-03 01:43:26:   internalPosition: undefined,
+2026-04-03 01:43:26:   internalQuery: undefined,
+2026-04-03 01:43:26:   where: undefined,
+2026-04-03 01:43:26:   schema: undefined,
+2026-04-03 01:43:26:   table: undefined,
+2026-04-03 01:43:26:   column: undefined,
+2026-04-03 01:43:26:   dataType: undefined,
+2026-04-03 01:43:26:   constraint: undefined,
+2026-04-03 01:43:26:   file: 'auth.c',
+2026-04-03 01:43:26:   line: '331',
+2026-04-03 01:43:26:   routine: 'auth_failed'
+2026-04-03 01:43:26: }
+2026-04-03 01:43:26: 
+2026-04-03 01:43:26: [Pipeline] Step 4/4 — Publishing
+2026-04-03 01:43:26: [Publisher] 📄 Saved to ./output/brief-2026-04-02.html — copy into Substack editor to publish
+2026-04-03 01:43:26: [Alerts] ✅ Brief published for 2026-04-02 (ID: f6440848-1c59-45dd-b6a7-e29702e7823e)
+2026-04-03 01:43:26: 
+2026-04-03 01:43:26: [Pipeline] ✅ Done. Brief for 2026-04-02 complete.
+2026-04-03 15:33:30: [dotenv@17.3.1] injecting env (9) from ..\.env -- tip: ⚙️  write to custom object with { processEnv: myObject }
+2026-04-03 15:33:31: Ingestion service running on port 3001
+2026-04-03 15:33:31: Cron scheduled: 7:00am IST daily
+2026-04-03 15:33:31: Manual trigger: POST /api/trigger
+2026-04-03 15:33:31: Health check: GET /health
+2026-04-03 15:33:42: [dotenv@17.3.1] injecting env (9) from ..\.env -- tip: ⚡️ secrets for agents: https://dotenvx.com/as2
+2026-04-03 15:33:42: Ingestion service running on port 3001
+2026-04-03 15:33:42: Cron scheduled: 7:00am IST daily
+2026-04-03 15:33:42: Manual trigger: POST /api/trigger
+2026-04-03 15:33:42: Health check: GET /health
+2026-04-03 15:35:50: [dotenv@17.3.1] injecting env (9) from ..\.env -- tip: ⚡️ secrets for agents: https://dotenvx.com/as2
+2026-04-03 15:35:50: Ingestion service running on port 3001
+2026-04-03 15:35:50: Cron scheduled: 7:00am IST daily
+2026-04-03 15:35:50: Manual trigger: POST /api/trigger
+2026-04-03 15:35:50: Health check: GET /health
+2026-04-04 13:49:57: [dotenv@17.3.1] injecting env (9) from ..\.env -- tip: 🛠️  run anywhere with `dotenvx run -- yourcommand`
+2026-04-04 13:49:58: Ingestion service running on port 3001
+2026-04-04 13:49:58: Cron scheduled: 7:00am IST daily
+2026-04-04 13:49:58: Manual trigger: POST /api/trigger
+2026-04-04 13:49:58: Health check: GET /health
+2026-04-04 21:31:26: [dotenv@17.3.1] injecting env (9) from ..\.env -- tip: ⚙️  override existing env vars with { override: true }
+2026-04-04 21:31:26: Ingestion service running on port 3001
+2026-04-04 21:31:26: Cron scheduled: 7:00am IST daily
+2026-04-04 21:31:26: Manual trigger: POST /api/trigger
+2026-04-04 21:31:26: Health check: GET /health
+2026-04-05 01:30:00: [Cron] 7:00am IST — firing daily pipeline
+2026-04-05 01:30:00: 
+2026-04-05 01:30:00: ========================================
+2026-04-05 01:30:00: [Pipeline] Starting daily brief for 2026-04-04
+2026-04-05 01:30:00: ========================================
+2026-04-05 01:30:00: 
+2026-04-05 01:30:00: [Pipeline] Step 1/4 — Ingestion
+2026-04-05 01:30:00: [Ingestion] Running 12 agents (concurrency: 6)...
+2026-04-05 01:30:00: [Ingestion] Batch 1/2: fii_dii, block_deals, insider_trades, option_chain, nifty_50, us_markets
+2026-04-05 01:30:00:   [Agent] fii_dii — starting...
+2026-04-05 01:30:00:   [Agent] block_deals — starting...
+2026-04-05 01:30:00:   [Agent] insider_trades — starting...
+2026-04-05 01:30:00:   [Agent] option_chain — starting...
+2026-04-05 01:30:00:   [Agent] nifty_50 — starting...
+2026-04-05 01:30:00:   [Agent] us_markets — starting...
+2026-04-05 01:30:03:   [Agent] us_markets — run_id: 7b2c2bb7-1e87-4707-a177-8bc8ec2b66c2
+2026-04-05 01:30:03:   [Agent] nifty_50 — run_id: 8ffa2333-791c-42b9-b07f-839e266f272b
+2026-04-05 01:30:03:   [Agent] block_deals — run_id: e8995e2b-c6f9-46ca-95e4-33badfb51182
+2026-04-05 01:30:03:   [Agent] fii_dii — run_id: c2fbdec9-52a0-466e-b20d-3a484afc5e76
+2026-04-05 01:30:03:   [Agent] insider_trades — run_id: a77a8481-4fc1-43cc-a74e-cb9701f6be8d
+2026-04-05 01:30:03:   [Agent] option_chain — run_id: c075ef96-6bd3-4be7-89c8-b04ed6c5901a
+2026-04-05 01:30:26:   [Agent] us_markets — ok
+2026-04-05 01:32:29:   [Agent] fii_dii — unavailable
+2026-04-05 01:34:49:   [Agent] insider_trades — ok
+2026-04-05 01:35:06:   [Agent] nifty_50 — TIMEOUT, cancelling run...
+2026-04-05 01:35:06:   [Agent] nifty_50 — run cancelled
+2026-04-05 01:38:05:   [Agent] option_chain — TIMEOUT, cancelling run...
+2026-04-05 01:38:05:   [Agent] block_deals — TIMEOUT, cancelling run...
+2026-04-05 01:38:05:   [Agent] option_chain — run cancelled
+2026-04-05 01:38:05:   [Agent] block_deals — run cancelled
+2026-04-05 01:38:05: [Ingestion] Batch 2/2: usd_inr, brent_crude, gold_mcx, earnings_bse, rbi_releases, asia_cues
+2026-04-05 01:38:05:   [Agent] usd_inr — starting...
+2026-04-05 01:38:05:   [Agent] brent_crude — starting...
+2026-04-05 01:38:05:   [Agent] gold_mcx — starting...
+2026-04-05 01:38:05:   [Agent] earnings_bse — starting...
+2026-04-05 01:38:05:   [Agent] rbi_releases — starting...
+2026-04-05 01:38:05:   [Agent] asia_cues — starting...
+2026-04-05 01:38:06:   [Agent] brent_crude — run_id: 1d40fa0b-8cb2-4843-97d6-023766508521
+2026-04-05 01:38:06:   [Agent] usd_inr — run_id: 5efd94f2-6d22-4dff-a3f9-7c96026debbd
+2026-04-05 01:38:06:   [Agent] gold_mcx — run_id: e870bd81-1047-485a-acfb-05e812f4367c
+2026-04-05 01:38:07:   [Agent] asia_cues — run_id: b9e93bd4-f7a4-4cb3-bccb-3dc2e948e685
+2026-04-05 01:38:07:   [Agent] rbi_releases — run_id: 917058e3-37ad-44a4-a5e4-ca6076db11b6
+2026-04-05 01:38:07:   [Agent] earnings_bse — run_id: c3be3872-90e9-42ea-97ca-cdd5ca60b213
+2026-04-05 01:41:53:   [Agent] rbi_releases — ok
+2026-04-05 01:43:07:   [Agent] gold_mcx — TIMEOUT, cancelling run...
+2026-04-05 01:43:07:   [Agent] gold_mcx — run cancelled
+2026-04-05 01:43:09:   [Agent] brent_crude — TIMEOUT, cancelling run...
+2026-04-05 01:43:09:   [Agent] usd_inr — TIMEOUT, cancelling run...
+2026-04-05 01:43:09:   [Agent] brent_crude — run cancelled
+2026-04-05 01:43:09:   [Agent] usd_inr — run cancelled
+2026-04-05 01:43:10:   [Agent] asia_cues — TIMEOUT, cancelling run...
+2026-04-05 01:43:10:   [Agent] asia_cues — run cancelled
+2026-04-05 01:43:56:   [Agent] earnings_bse — ok
+2026-04-05 01:43:56: [Ingestion] Done in 836.8s — 4 ok, 1 unavailable, 7 failed
+2026-04-05 01:43:56: [Orchestrator] Ingestion summary:
+2026-04-05 01:43:56:   ⚠️ fii_dii: unavailable
+2026-04-05 01:43:56:   ❌ block_deals: failed
+2026-04-05 01:43:56:   ✅ insider_trades: ok
+2026-04-05 01:43:56:   ❌ option_chain: failed
+2026-04-05 01:43:56:   ❌ nifty_50: failed
+2026-04-05 01:43:56:   ✅ us_markets: ok
+2026-04-05 01:43:56:   ❌ usd_inr: failed
+2026-04-05 01:43:56:   ❌ brent_crude: failed
+2026-04-05 01:43:56:   ❌ gold_mcx: failed
+2026-04-05 01:43:56:   ✅ earnings_bse: ok
+2026-04-05 01:43:56:   ✅ rbi_releases: ok
+2026-04-05 01:43:56:   ❌ asia_cues: failed
+2026-04-05 01:43:56: [Alerts] ⚠️ 7 signals failed for 2026-04-04: block_deals, option_chain, nifty_50, usd_inr, brent_crude, gold_mcx, asia_cues
+2026-04-05 01:43:56: 
+2026-04-05 01:43:56: [Pipeline] Step 2/4 — Synthesis
+2026-04-05 01:43:56: [Synthesis] Calling OpenAI GPT-4o...
+2026-04-05 01:44:09: [Synthesis] ✅ Valid brief JSON parsed
+2026-04-05 01:44:09: [Gates] ✅ All three gates passed
+2026-04-05 01:44:09: 
+2026-04-05 01:44:09: [Pipeline] Step 3/4 — Saving to database
+2026-04-05 01:44:10: [Pipeline] Brief saved to database
+2026-04-05 01:44:10: [Pipeline] Audit record saved to database
+2026-04-05 01:44:10: 
+2026-04-05 01:44:10: [Pipeline] Step 4/4 — Publishing
+2026-04-05 01:44:10: [Publisher] 📄 Saved to ./output/brief-2026-04-04.html — copy into Substack editor to publish
+2026-04-05 01:44:10: [Alerts] ✅ Brief published for 2026-04-04 (ID: fc2b73c8-c85f-461a-b7f3-b8f45d6964e9)
+2026-04-05 01:44:10: 
+2026-04-05 01:44:10: [Pipeline] ✅ Done. Brief for 2026-04-04 complete.
+2026-04-06 00:26:39: [dotenv@17.3.1] injecting env (9) from ..\.env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+2026-04-06 00:26:39: Ingestion service running on port 3001
+2026-04-06 00:26:39: Manual trigger: POST /api/trigger
+2026-04-06 00:26:39: Health check: GET /health

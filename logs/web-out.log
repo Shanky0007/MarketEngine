@@ -1,0 +1,117 @@
+2026-03-31 00:38:01: ▲ Next.js 16.2.1 (Turbopack)
+2026-03-31 00:38:01: - Local:         http://localhost:3000
+2026-03-31 00:38:01: - Network:       http://172.27.48.1:3000
+2026-03-31 00:38:01: - Environments: .env.local
+2026-03-31 00:38:01: ✓ Ready in 2.8s
+2026-03-31 00:38:04: 
+2026-03-31 00:38:48:  GET / 200 in 1564ms (next.js: 573ms, application-code: 991ms)
+2026-03-31 00:55:13: [?25h
+2026-03-31 00:55:13: 
+2026-03-31 00:55:19: ▲ Next.js 16.2.1 (Turbopack)
+2026-03-31 00:55:19: - Local:         http://localhost:3000
+2026-03-31 00:55:19: - Network:       http://172.27.48.1:3000
+2026-03-31 00:55:19: - Environments: .env.local
+2026-03-31 00:55:19: ✓ Ready in 1471ms
+2026-03-31 00:55:21: 
+2026-03-31 00:55:22: [?25h
+2026-03-31 00:55:22: 
+2026-03-31 00:55:29: ▲ Next.js 16.2.1 (Turbopack)
+2026-03-31 00:55:29: - Local:         http://localhost:3000
+2026-03-31 00:55:29: - Network:       http://172.27.48.1:3000
+2026-03-31 00:55:29: - Environments: .env.local
+2026-03-31 00:55:29: ✓ Ready in 1180ms
+2026-03-31 00:55:29: 
+2026-03-31 03:32:52: [?25h
+2026-03-31 03:32:52: 
+2026-03-31 03:32:59: ▲ Next.js 16.2.1 (Turbopack)
+2026-03-31 03:32:59: - Local:         http://localhost:3000
+2026-03-31 03:32:59: - Network:       http://172.27.48.1:3000
+2026-03-31 03:32:59: - Environments: .env.local
+2026-03-31 03:32:59: ✓ Ready in 986ms
+2026-03-31 03:33:00: 
+2026-03-31 12:32:25: ▲ Next.js 16.2.1 (Turbopack)
+2026-03-31 12:32:25: - Local:         http://localhost:3000
+2026-03-31 12:32:25: - Network:       http://172.27.48.1:3000
+2026-03-31 12:32:25: - Environments: .env.local
+2026-03-31 12:32:25: ✓ Ready in 1744ms
+2026-03-31 12:32:26: 
+2026-03-31 16:38:22:  GET / 500 in 1461ms (next.js: 580ms, application-code: 881ms)
+2026-03-31 16:38:22:  GET / 500 in 151ms (next.js: 10ms, application-code: 141ms)
+2026-03-31 19:51:45: [?25h
+2026-03-31 19:51:45: 
+2026-03-31 19:51:52: ▲ Next.js 16.2.1 (Turbopack)
+2026-03-31 19:51:52: - Local:         http://localhost:3000
+2026-03-31 19:51:52: - Network:       http://172.27.48.1:3000
+2026-03-31 19:51:52: - Environments: .env.local
+2026-03-31 19:51:52: ✓ Ready in 1236ms
+2026-03-31 19:51:53: 
+2026-03-31 19:51:54: [?25h
+2026-03-31 19:51:54: 
+2026-03-31 19:52:00: ▲ Next.js 16.2.1 (Turbopack)
+2026-03-31 19:52:00: - Local:         http://localhost:3000
+2026-03-31 19:52:00: - Network:       http://172.27.48.1:3000
+2026-03-31 19:52:00: - Environments: .env.local
+2026-03-31 19:52:00: ✓ Ready in 735ms
+2026-03-31 19:52:01: 
+2026-04-02 14:53:19: ▲ Next.js 16.2.1 (Turbopack)
+2026-04-02 14:53:19: - Local:         http://localhost:3000
+2026-04-02 14:53:19: - Network:       http://172.27.48.1:3000
+2026-04-02 14:53:19: - Environments: .env.local
+2026-04-02 14:53:19: ✓ Ready in 1482ms
+2026-04-02 14:53:21: 
+2026-04-02 22:59:33:  GET / 500 in 2.0s (next.js: 1057ms, application-code: 969ms)
+2026-04-02 22:59:37:  GET /user-area 404 in 2.7s (next.js: 2.6s, application-code: 119ms)
+2026-04-02 23:05:44:  GET / 500 in 173ms (next.js: 13ms, application-code: 160ms)
+2026-04-02 23:06:11:  GET /user-area?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwicm9sZSI6InVzZXIiLCJpYXQiOjE3NzUxNTEzNzEsImV4cCI6MTc3NTIzNzc3MX0.tDMVCZbxW9oaLHtmouaVBEpVioIYoB5QeeeJ8Vz3OPY&user=%7B%22id%22%3A5%2C%22name%22%3A%22Shashank%20Pandey%22%2C%22email%22%3A%22facebook_1655656625624357%40studiovb.temp%22%2C%22role%22%3A%22user%22%7D 404 in 112ms (next.js: 13ms, application-code: 99ms)
+2026-04-03 00:42:05: ▲ Next.js 16.2.1 (Turbopack)
+2026-04-03 00:42:05: - Local:         http://localhost:3000
+2026-04-03 00:42:05: - Network:       http://172.27.48.1:3000
+2026-04-03 00:42:05: - Environments: .env.local
+2026-04-03 00:42:05: ✓ Ready in 1638ms
+2026-04-03 00:42:07: 
+2026-04-03 15:33:20: [?25h
+2026-04-03 15:33:20: 
+2026-04-03 15:33:32: ▲ Next.js 16.2.1 (Turbopack)
+2026-04-03 15:33:32: - Local:         http://localhost:3000
+2026-04-03 15:33:32: - Network:       http://172.27.48.1:3000
+2026-04-03 15:33:32: - Environments: .env.local
+2026-04-03 15:33:32: ✓ Ready in 2.4s
+2026-04-03 15:33:35: [?25h
+2026-04-03 15:33:35: 
+2026-04-03 15:33:41: ▲ Next.js 16.2.1 (Turbopack)
+2026-04-03 15:33:41: - Local:         http://localhost:3000
+2026-04-03 15:33:41: - Network:       http://172.27.48.1:3000
+2026-04-03 15:33:41: - Environments: .env.local
+2026-04-03 15:33:41: ✓ Ready in 1433ms
+2026-04-03 15:33:49: 
+2026-04-03 15:35:50: ▲ Next.js 16.2.1 (Turbopack)
+2026-04-03 15:35:50: - Local:         http://localhost:3000
+2026-04-03 15:35:50: - Network:       http://192.168.1.7:3000
+2026-04-03 15:35:50: - Environments: .env.local
+2026-04-03 15:35:50: ✓ Ready in 1641ms
+2026-04-03 15:35:51: 
+2026-04-03 16:51:27:  GET / 200 in 2.6s (next.js: 785ms, application-code: 1806ms)
+2026-04-03 19:49:22:  GET / 200 in 729ms (next.js: 90ms, application-code: 639ms)
+2026-04-04 13:49:57: ▲ Next.js 16.2.1 (Turbopack)
+2026-04-04 13:49:57: - Local:         http://localhost:3000
+2026-04-04 13:49:57: - Network:       http://192.168.1.7:3000
+2026-04-04 13:49:57: - Environments: .env.local
+2026-04-04 13:49:57: ✓ Ready in 1787ms
+2026-04-04 13:49:59: 
+2026-04-04 13:50:41:  GET / 200 in 1960ms (next.js: 472ms, application-code: 1488ms)
+2026-04-04 13:51:35:  GET / 200 in 234ms (next.js: 11ms, application-code: 223ms)
+2026-04-04 17:17:09:  GET / 200 in 708ms (next.js: 128ms, application-code: 580ms)
+2026-04-04 21:31:26: ▲ Next.js 16.2.1 (Turbopack)
+2026-04-04 21:31:26: - Local:         http://localhost:3000
+2026-04-04 21:31:26: - Network:       http://192.168.1.7:3000
+2026-04-04 21:31:26: - Environments: .env.local
+2026-04-04 21:31:26: ✓ Ready in 1761ms
+2026-04-04 21:31:27: 
+2026-04-06 00:26:33: [?25h
+2026-04-06 00:26:33: 
+2026-04-06 00:26:39: ▲ Next.js 16.2.1 (Turbopack)
+2026-04-06 00:26:39: - Local:         http://localhost:3000
+2026-04-06 00:26:39: - Network:       http://192.168.1.7:3000
+2026-04-06 00:26:39: - Environments: .env.local
+2026-04-06 00:26:39: ✓ Ready in 856ms
+2026-04-06 00:26:42: 

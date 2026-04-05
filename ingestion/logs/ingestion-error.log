@@ -1,0 +1,576 @@
+2026-03-31 00:26:19: D:\MarketEngine\node_modules\.bin\tsx:2
+2026-03-31 00:26:19: basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
+2026-03-31 00:26:19:           ^^^^^^^
+2026-03-31 00:26:19: 
+2026-03-31 00:26:19: SyntaxError: missing ) after argument list
+2026-03-31 00:26:19:     at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+2026-03-31 00:26:19:     at Module._compile (node:internal/modules/cjs/loader:1680:20)
+2026-03-31 00:26:19:     at Object..js (node:internal/modules/cjs/loader:1839:10)
+2026-03-31 00:26:19:     at Module.load (node:internal/modules/cjs/loader:1441:32)
+2026-03-31 00:26:19:     at Function._load (node:internal/modules/cjs/loader:1263:12)
+2026-03-31 00:26:19:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-03-31 00:26:19:     at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+2026-03-31 00:26:19:     at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+2026-03-31 00:26:19:     at node:internal/main/run_main_module:36:49
+2026-03-31 00:26:19: 
+2026-03-31 00:26:19: Node.js v22.19.0
+2026-03-31 00:26:24: D:\MarketEngine\node_modules\.bin\tsx:2
+2026-03-31 00:26:24: basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
+2026-03-31 00:26:24:           ^^^^^^^
+2026-03-31 00:26:24: 
+2026-03-31 00:26:24: SyntaxError: missing ) after argument list
+2026-03-31 00:26:24:     at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+2026-03-31 00:26:24:     at Module._compile (node:internal/modules/cjs/loader:1680:20)
+2026-03-31 00:26:24:     at Object..js (node:internal/modules/cjs/loader:1839:10)
+2026-03-31 00:26:24:     at Module.load (node:internal/modules/cjs/loader:1441:32)
+2026-03-31 00:26:24:     at Function._load (node:internal/modules/cjs/loader:1263:12)
+2026-03-31 00:26:24:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-03-31 00:26:24:     at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+2026-03-31 00:26:24:     at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+2026-03-31 00:26:24:     at node:internal/main/run_main_module:36:49
+2026-03-31 00:26:24: 
+2026-03-31 00:26:24: Node.js v22.19.0
+2026-03-31 00:26:29: D:\MarketEngine\node_modules\.bin\tsx:2
+2026-03-31 00:26:29: basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
+2026-03-31 00:26:29:           ^^^^^^^
+2026-03-31 00:26:29: 
+2026-03-31 00:26:29: SyntaxError: missing ) after argument list
+2026-03-31 00:26:29:     at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+2026-03-31 00:26:29:     at Module._compile (node:internal/modules/cjs/loader:1680:20)
+2026-03-31 00:26:29:     at Object..js (node:internal/modules/cjs/loader:1839:10)
+2026-03-31 00:26:29:     at Module.load (node:internal/modules/cjs/loader:1441:32)
+2026-03-31 00:26:29:     at Function._load (node:internal/modules/cjs/loader:1263:12)
+2026-03-31 00:26:29:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-03-31 00:26:29:     at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+2026-03-31 00:26:29:     at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+2026-03-31 00:26:29:     at node:internal/main/run_main_module:36:49
+2026-03-31 00:26:29: 
+2026-03-31 00:26:29: Node.js v22.19.0
+2026-03-31 00:26:34: D:\MarketEngine\node_modules\.bin\tsx:2
+2026-03-31 00:26:34: basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
+2026-03-31 00:26:34:           ^^^^^^^
+2026-03-31 00:26:34: 
+2026-03-31 00:26:34: SyntaxError: missing ) after argument list
+2026-03-31 00:26:34:     at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+2026-03-31 00:26:34:     at Module._compile (node:internal/modules/cjs/loader:1680:20)
+2026-03-31 00:26:34:     at Object..js (node:internal/modules/cjs/loader:1839:10)
+2026-03-31 00:26:34:     at Module.load (node:internal/modules/cjs/loader:1441:32)
+2026-03-31 00:26:34:     at Function._load (node:internal/modules/cjs/loader:1263:12)
+2026-03-31 00:26:34:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-03-31 00:26:34:     at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+2026-03-31 00:26:34:     at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+2026-03-31 00:26:34:     at node:internal/main/run_main_module:36:49
+2026-03-31 00:26:34: 
+2026-03-31 00:26:34: Node.js v22.19.0
+2026-03-31 00:26:39: D:\MarketEngine\node_modules\.bin\tsx:2
+2026-03-31 00:26:39: basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
+2026-03-31 00:26:39:           ^^^^^^^
+2026-03-31 00:26:39: 
+2026-03-31 00:26:39: SyntaxError: missing ) after argument list
+2026-03-31 00:26:39:     at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+2026-03-31 00:26:39:     at Module._compile (node:internal/modules/cjs/loader:1680:20)
+2026-03-31 00:26:39:     at Object..js (node:internal/modules/cjs/loader:1839:10)
+2026-03-31 00:26:39:     at Module.load (node:internal/modules/cjs/loader:1441:32)
+2026-03-31 00:26:39:     at Function._load (node:internal/modules/cjs/loader:1263:12)
+2026-03-31 00:26:39:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-03-31 00:26:39:     at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+2026-03-31 00:26:39:     at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+2026-03-31 00:26:39:     at node:internal/main/run_main_module:36:49
+2026-03-31 00:26:39: 
+2026-03-31 00:26:39: Node.js v22.19.0
+2026-03-31 00:26:44: D:\MarketEngine\node_modules\.bin\tsx:2
+2026-03-31 00:26:44: basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
+2026-03-31 00:26:44:           ^^^^^^^
+2026-03-31 00:26:44: 
+2026-03-31 00:26:44: SyntaxError: missing ) after argument list
+2026-03-31 00:26:44:     at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+2026-03-31 00:26:44:     at Module._compile (node:internal/modules/cjs/loader:1680:20)
+2026-03-31 00:26:44:     at Object..js (node:internal/modules/cjs/loader:1839:10)
+2026-03-31 00:26:44:     at Module.load (node:internal/modules/cjs/loader:1441:32)
+2026-03-31 00:26:44:     at Function._load (node:internal/modules/cjs/loader:1263:12)
+2026-03-31 00:26:44:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-03-31 00:26:44:     at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+2026-03-31 00:26:44:     at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+2026-03-31 00:26:44:     at node:internal/main/run_main_module:36:49
+2026-03-31 00:26:44: 
+2026-03-31 00:26:44: Node.js v22.19.0
+2026-03-31 00:26:49: D:\MarketEngine\node_modules\.bin\tsx:2
+2026-03-31 00:26:49: basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
+2026-03-31 00:26:49:           ^^^^^^^
+2026-03-31 00:26:49: 
+2026-03-31 00:26:49: SyntaxError: missing ) after argument list
+2026-03-31 00:26:49:     at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+2026-03-31 00:26:49:     at Module._compile (node:internal/modules/cjs/loader:1680:20)
+2026-03-31 00:26:49:     at Object..js (node:internal/modules/cjs/loader:1839:10)
+2026-03-31 00:26:49:     at Module.load (node:internal/modules/cjs/loader:1441:32)
+2026-03-31 00:26:49:     at Function._load (node:internal/modules/cjs/loader:1263:12)
+2026-03-31 00:26:49:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-03-31 00:26:49:     at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+2026-03-31 00:26:49:     at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+2026-03-31 00:26:49:     at node:internal/main/run_main_module:36:49
+2026-03-31 00:26:49: 
+2026-03-31 00:26:49: Node.js v22.19.0
+2026-03-31 00:26:55: D:\MarketEngine\node_modules\.bin\tsx:2
+2026-03-31 00:26:55: basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
+2026-03-31 00:26:55:           ^^^^^^^
+2026-03-31 00:26:55: 
+2026-03-31 00:26:55: SyntaxError: missing ) after argument list
+2026-03-31 00:26:55:     at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+2026-03-31 00:26:55:     at Module._compile (node:internal/modules/cjs/loader:1680:20)
+2026-03-31 00:26:55:     at Object..js (node:internal/modules/cjs/loader:1839:10)
+2026-03-31 00:26:55:     at Module.load (node:internal/modules/cjs/loader:1441:32)
+2026-03-31 00:26:55:     at Function._load (node:internal/modules/cjs/loader:1263:12)
+2026-03-31 00:26:55:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-03-31 00:26:55:     at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+2026-03-31 00:26:55:     at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+2026-03-31 00:26:55:     at node:internal/main/run_main_module:36:49
+2026-03-31 00:26:55: 
+2026-03-31 00:26:55: Node.js v22.19.0
+2026-03-31 00:27:00: D:\MarketEngine\node_modules\.bin\tsx:2
+2026-03-31 00:27:00: basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
+2026-03-31 00:27:00:           ^^^^^^^
+2026-03-31 00:27:00: 
+2026-03-31 00:27:00: SyntaxError: missing ) after argument list
+2026-03-31 00:27:00:     at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+2026-03-31 00:27:00:     at Module._compile (node:internal/modules/cjs/loader:1680:20)
+2026-03-31 00:27:00:     at Object..js (node:internal/modules/cjs/loader:1839:10)
+2026-03-31 00:27:00:     at Module.load (node:internal/modules/cjs/loader:1441:32)
+2026-03-31 00:27:00:     at Function._load (node:internal/modules/cjs/loader:1263:12)
+2026-03-31 00:27:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-03-31 00:27:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+2026-03-31 00:27:00:     at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+2026-03-31 00:27:00:     at node:internal/main/run_main_module:36:49
+2026-03-31 00:27:00: 
+2026-03-31 00:27:00: Node.js v22.19.0
+2026-03-31 00:27:05: D:\MarketEngine\node_modules\.bin\tsx:2
+2026-03-31 00:27:05: basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
+2026-03-31 00:27:05:           ^^^^^^^
+2026-03-31 00:27:05: 
+2026-03-31 00:27:05: SyntaxError: missing ) after argument list
+2026-03-31 00:27:05:     at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+2026-03-31 00:27:05:     at Module._compile (node:internal/modules/cjs/loader:1680:20)
+2026-03-31 00:27:05:     at Object..js (node:internal/modules/cjs/loader:1839:10)
+2026-03-31 00:27:05:     at Module.load (node:internal/modules/cjs/loader:1441:32)
+2026-03-31 00:27:05:     at Function._load (node:internal/modules/cjs/loader:1263:12)
+2026-03-31 00:27:05:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-03-31 00:27:05:     at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+2026-03-31 00:27:05:     at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+2026-03-31 00:27:05:     at node:internal/main/run_main_module:36:49
+2026-03-31 00:27:05: 
+2026-03-31 00:27:05: Node.js v22.19.0
+2026-03-31 00:27:10: D:\MarketEngine\node_modules\.bin\tsx:2
+2026-03-31 00:27:10: basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
+2026-03-31 00:27:10:           ^^^^^^^
+2026-03-31 00:27:10: 
+2026-03-31 00:27:10: SyntaxError: missing ) after argument list
+2026-03-31 00:27:10:     at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+2026-03-31 00:27:10:     at Module._compile (node:internal/modules/cjs/loader:1680:20)
+2026-03-31 00:27:10:     at Object..js (node:internal/modules/cjs/loader:1839:10)
+2026-03-31 00:27:10:     at Module.load (node:internal/modules/cjs/loader:1441:32)
+2026-03-31 00:27:10:     at Function._load (node:internal/modules/cjs/loader:1263:12)
+2026-03-31 00:27:10:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-03-31 00:27:10:     at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+2026-03-31 00:27:10:     at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+2026-03-31 00:27:10:     at node:internal/main/run_main_module:36:49
+2026-03-31 00:27:10: 
+2026-03-31 00:27:10: Node.js v22.19.0
+2026-03-31 00:27:15: D:\MarketEngine\node_modules\.bin\tsx:2
+2026-03-31 00:27:15: basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
+2026-03-31 00:27:15:           ^^^^^^^
+2026-03-31 00:27:15: 
+2026-03-31 00:27:15: SyntaxError: missing ) after argument list
+2026-03-31 00:27:15:     at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+2026-03-31 00:27:15:     at Module._compile (node:internal/modules/cjs/loader:1680:20)
+2026-03-31 00:27:15:     at Object..js (node:internal/modules/cjs/loader:1839:10)
+2026-03-31 00:27:15:     at Module.load (node:internal/modules/cjs/loader:1441:32)
+2026-03-31 00:27:15:     at Function._load (node:internal/modules/cjs/loader:1263:12)
+2026-03-31 00:27:15:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-03-31 00:27:15:     at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+2026-03-31 00:27:15:     at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+2026-03-31 00:27:15:     at node:internal/main/run_main_module:36:49
+2026-03-31 00:27:15: 
+2026-03-31 00:27:15: Node.js v22.19.0
+2026-03-31 00:27:20: D:\MarketEngine\node_modules\.bin\tsx:2
+2026-03-31 00:27:20: basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
+2026-03-31 00:27:20:           ^^^^^^^
+2026-03-31 00:27:20: 
+2026-03-31 00:27:20: SyntaxError: missing ) after argument list
+2026-03-31 00:27:20:     at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+2026-03-31 00:27:20:     at Module._compile (node:internal/modules/cjs/loader:1680:20)
+2026-03-31 00:27:20:     at Object..js (node:internal/modules/cjs/loader:1839:10)
+2026-03-31 00:27:20:     at Module.load (node:internal/modules/cjs/loader:1441:32)
+2026-03-31 00:27:20:     at Function._load (node:internal/modules/cjs/loader:1263:12)
+2026-03-31 00:27:20:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-03-31 00:27:20:     at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+2026-03-31 00:27:20:     at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+2026-03-31 00:27:20:     at node:internal/main/run_main_module:36:49
+2026-03-31 00:27:20: 
+2026-03-31 00:27:20: Node.js v22.19.0
+2026-03-31 00:36:02: D:\MarketEngine\node_modules\.bin\tsx:2
+2026-03-31 00:36:02: basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
+2026-03-31 00:36:02:           ^^^^^^^
+2026-03-31 00:36:02: 
+2026-03-31 00:36:02: SyntaxError: missing ) after argument list
+2026-03-31 00:36:02:     at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+2026-03-31 00:36:02:     at Module._compile (node:internal/modules/cjs/loader:1680:20)
+2026-03-31 00:36:02:     at Object..js (node:internal/modules/cjs/loader:1839:10)
+2026-03-31 00:36:02:     at Module.load (node:internal/modules/cjs/loader:1441:32)
+2026-03-31 00:36:02:     at Function._load (node:internal/modules/cjs/loader:1263:12)
+2026-03-31 00:36:02:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-03-31 00:36:02:     at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+2026-03-31 00:36:02:     at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+2026-03-31 00:36:02:     at node:internal/main/run_main_module:36:49
+2026-03-31 00:36:02: 
+2026-03-31 00:36:02: Node.js v22.19.0
+2026-03-31 00:36:07: D:\MarketEngine\node_modules\.bin\tsx:2
+2026-03-31 00:36:07: basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
+2026-03-31 00:36:07:           ^^^^^^^
+2026-03-31 00:36:07: 
+2026-03-31 00:36:07: SyntaxError: missing ) after argument list
+2026-03-31 00:36:07:     at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+2026-03-31 00:36:07:     at Module._compile (node:internal/modules/cjs/loader:1680:20)
+2026-03-31 00:36:07:     at Object..js (node:internal/modules/cjs/loader:1839:10)
+2026-03-31 00:36:07:     at Module.load (node:internal/modules/cjs/loader:1441:32)
+2026-03-31 00:36:07:     at Function._load (node:internal/modules/cjs/loader:1263:12)
+2026-03-31 00:36:07:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-03-31 00:36:07:     at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+2026-03-31 00:36:07:     at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+2026-03-31 00:36:07:     at node:internal/main/run_main_module:36:49
+2026-03-31 00:36:07: 
+2026-03-31 00:36:07: Node.js v22.19.0
+2026-03-31 00:36:12: D:\MarketEngine\node_modules\.bin\tsx:2
+2026-03-31 00:36:12: basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
+2026-03-31 00:36:12:           ^^^^^^^
+2026-03-31 00:36:12: 
+2026-03-31 00:36:12: SyntaxError: missing ) after argument list
+2026-03-31 00:36:12:     at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+2026-03-31 00:36:12:     at Module._compile (node:internal/modules/cjs/loader:1680:20)
+2026-03-31 00:36:12:     at Object..js (node:internal/modules/cjs/loader:1839:10)
+2026-03-31 00:36:12:     at Module.load (node:internal/modules/cjs/loader:1441:32)
+2026-03-31 00:36:12:     at Function._load (node:internal/modules/cjs/loader:1263:12)
+2026-03-31 00:36:12:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-03-31 00:36:12:     at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+2026-03-31 00:36:12:     at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+2026-03-31 00:36:12:     at node:internal/main/run_main_module:36:49
+2026-03-31 00:36:12: 
+2026-03-31 00:36:12: Node.js v22.19.0
+2026-03-31 00:36:18: D:\MarketEngine\node_modules\.bin\tsx:2
+2026-03-31 00:36:18: basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
+2026-03-31 00:36:18:           ^^^^^^^
+2026-03-31 00:36:18: 
+2026-03-31 00:36:18: SyntaxError: missing ) after argument list
+2026-03-31 00:36:18:     at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+2026-03-31 00:36:18:     at Module._compile (node:internal/modules/cjs/loader:1680:20)
+2026-03-31 00:36:18:     at Object..js (node:internal/modules/cjs/loader:1839:10)
+2026-03-31 00:36:18:     at Module.load (node:internal/modules/cjs/loader:1441:32)
+2026-03-31 00:36:18:     at Function._load (node:internal/modules/cjs/loader:1263:12)
+2026-03-31 00:36:18:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-03-31 00:36:18:     at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+2026-03-31 00:36:18:     at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+2026-03-31 00:36:18:     at node:internal/main/run_main_module:36:49
+2026-03-31 00:36:18: 
+2026-03-31 00:36:18: Node.js v22.19.0
+2026-03-31 00:36:23: D:\MarketEngine\node_modules\.bin\tsx:2
+2026-03-31 00:36:23: basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
+2026-03-31 00:36:23:           ^^^^^^^
+2026-03-31 00:36:23: 
+2026-03-31 00:36:23: SyntaxError: missing ) after argument list
+2026-03-31 00:36:23:     at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+2026-03-31 00:36:23:     at Module._compile (node:internal/modules/cjs/loader:1680:20)
+2026-03-31 00:36:23:     at Object..js (node:internal/modules/cjs/loader:1839:10)
+2026-03-31 00:36:23:     at Module.load (node:internal/modules/cjs/loader:1441:32)
+2026-03-31 00:36:23:     at Function._load (node:internal/modules/cjs/loader:1263:12)
+2026-03-31 00:36:23:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-03-31 00:36:23:     at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+2026-03-31 00:36:23:     at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+2026-03-31 00:36:23:     at node:internal/main/run_main_module:36:49
+2026-03-31 00:36:23: 
+2026-03-31 00:36:23: Node.js v22.19.0
+2026-03-31 00:36:28: D:\MarketEngine\node_modules\.bin\tsx:2
+2026-03-31 00:36:28: basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
+2026-03-31 00:36:28:           ^^^^^^^
+2026-03-31 00:36:28: 
+2026-03-31 00:36:28: SyntaxError: missing ) after argument list
+2026-03-31 00:36:28:     at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+2026-03-31 00:36:28:     at Module._compile (node:internal/modules/cjs/loader:1680:20)
+2026-03-31 00:36:28:     at Object..js (node:internal/modules/cjs/loader:1839:10)
+2026-03-31 00:36:28:     at Module.load (node:internal/modules/cjs/loader:1441:32)
+2026-03-31 00:36:28:     at Function._load (node:internal/modules/cjs/loader:1263:12)
+2026-03-31 00:36:28:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-03-31 00:36:28:     at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+2026-03-31 00:36:28:     at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+2026-03-31 00:36:28:     at node:internal/main/run_main_module:36:49
+2026-03-31 00:36:28: 
+2026-03-31 00:36:28: Node.js v22.19.0
+2026-03-31 00:36:33: D:\MarketEngine\node_modules\.bin\tsx:2
+2026-03-31 00:36:33: basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
+2026-03-31 00:36:33:           ^^^^^^^
+2026-03-31 00:36:33: 
+2026-03-31 00:36:33: SyntaxError: missing ) after argument list
+2026-03-31 00:36:33:     at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+2026-03-31 00:36:33:     at Module._compile (node:internal/modules/cjs/loader:1680:20)
+2026-03-31 00:36:33:     at Object..js (node:internal/modules/cjs/loader:1839:10)
+2026-03-31 00:36:33:     at Module.load (node:internal/modules/cjs/loader:1441:32)
+2026-03-31 00:36:33:     at Function._load (node:internal/modules/cjs/loader:1263:12)
+2026-03-31 00:36:33:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-03-31 00:36:33:     at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+2026-03-31 00:36:33:     at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+2026-03-31 00:36:33:     at node:internal/main/run_main_module:36:49
+2026-03-31 00:36:33: 
+2026-03-31 00:36:33: Node.js v22.19.0
+2026-03-31 00:36:38: D:\MarketEngine\node_modules\.bin\tsx:2
+2026-03-31 00:36:38: basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
+2026-03-31 00:36:38:           ^^^^^^^
+2026-03-31 00:36:38: 
+2026-03-31 00:36:38: SyntaxError: missing ) after argument list
+2026-03-31 00:36:38:     at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+2026-03-31 00:36:38:     at Module._compile (node:internal/modules/cjs/loader:1680:20)
+2026-03-31 00:36:38:     at Object..js (node:internal/modules/cjs/loader:1839:10)
+2026-03-31 00:36:38:     at Module.load (node:internal/modules/cjs/loader:1441:32)
+2026-03-31 00:36:38:     at Function._load (node:internal/modules/cjs/loader:1263:12)
+2026-03-31 00:36:38:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-03-31 00:36:38:     at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+2026-03-31 00:36:38:     at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+2026-03-31 00:36:38:     at node:internal/main/run_main_module:36:49
+2026-03-31 00:36:38: 
+2026-03-31 00:36:38: Node.js v22.19.0
+2026-03-31 00:36:43: D:\MarketEngine\node_modules\.bin\tsx:2
+2026-03-31 00:36:43: basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
+2026-03-31 00:36:43:           ^^^^^^^
+2026-03-31 00:36:43: 
+2026-03-31 00:36:43: SyntaxError: missing ) after argument list
+2026-03-31 00:36:43:     at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+2026-03-31 00:36:43:     at Module._compile (node:internal/modules/cjs/loader:1680:20)
+2026-03-31 00:36:43:     at Object..js (node:internal/modules/cjs/loader:1839:10)
+2026-03-31 00:36:43:     at Module.load (node:internal/modules/cjs/loader:1441:32)
+2026-03-31 00:36:43:     at Function._load (node:internal/modules/cjs/loader:1263:12)
+2026-03-31 00:36:43:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-03-31 00:36:43:     at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+2026-03-31 00:36:43:     at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+2026-03-31 00:36:43:     at node:internal/main/run_main_module:36:49
+2026-03-31 00:36:43: 
+2026-03-31 00:36:43: Node.js v22.19.0
+2026-03-31 00:36:48: D:\MarketEngine\node_modules\.bin\tsx:2
+2026-03-31 00:36:48: basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
+2026-03-31 00:36:48:           ^^^^^^^
+2026-03-31 00:36:48: 
+2026-03-31 00:36:48: SyntaxError: missing ) after argument list
+2026-03-31 00:36:48:     at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+2026-03-31 00:36:48:     at Module._compile (node:internal/modules/cjs/loader:1680:20)
+2026-03-31 00:36:48:     at Object..js (node:internal/modules/cjs/loader:1839:10)
+2026-03-31 00:36:48:     at Module.load (node:internal/modules/cjs/loader:1441:32)
+2026-03-31 00:36:48:     at Function._load (node:internal/modules/cjs/loader:1263:12)
+2026-03-31 00:36:48:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-03-31 00:36:48:     at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+2026-03-31 00:36:48:     at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+2026-03-31 00:36:48:     at node:internal/main/run_main_module:36:49
+2026-03-31 00:36:48: 
+2026-03-31 00:36:48: Node.js v22.19.0
+2026-03-31 00:36:53: D:\MarketEngine\node_modules\.bin\tsx.cmd:1
+2026-03-31 00:36:53: @ECHO off
+2026-03-31 00:36:53: ^
+2026-03-31 00:36:53: 
+2026-03-31 00:36:53: SyntaxError: Invalid or unexpected token
+2026-03-31 00:36:53:     at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+2026-03-31 00:36:53:     at Module._compile (node:internal/modules/cjs/loader:1680:20)
+2026-03-31 00:36:53:     at Object..js (node:internal/modules/cjs/loader:1839:10)
+2026-03-31 00:36:53:     at Module.load (node:internal/modules/cjs/loader:1441:32)
+2026-03-31 00:36:53:     at Function._load (node:internal/modules/cjs/loader:1263:12)
+2026-03-31 00:36:53:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-03-31 00:36:53:     at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+2026-03-31 00:36:53:     at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+2026-03-31 00:36:53:     at node:internal/main/run_main_module:36:49
+2026-03-31 00:36:53: 
+2026-03-31 00:36:53: Node.js v22.19.0
+2026-03-31 00:36:58: D:\MarketEngine\node_modules\.bin\tsx.cmd:1
+2026-03-31 00:36:58: @ECHO off
+2026-03-31 00:36:58: ^
+2026-03-31 00:36:58: 
+2026-03-31 00:36:58: SyntaxError: Invalid or unexpected token
+2026-03-31 00:36:58:     at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+2026-03-31 00:36:58:     at Module._compile (node:internal/modules/cjs/loader:1680:20)
+2026-03-31 00:36:58:     at Object..js (node:internal/modules/cjs/loader:1839:10)
+2026-03-31 00:36:58:     at Module.load (node:internal/modules/cjs/loader:1441:32)
+2026-03-31 00:36:58:     at Function._load (node:internal/modules/cjs/loader:1263:12)
+2026-03-31 00:36:58:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-03-31 00:36:58:     at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+2026-03-31 00:36:58:     at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+2026-03-31 00:36:58:     at node:internal/main/run_main_module:36:49
+2026-03-31 00:36:58: 
+2026-03-31 00:36:58: Node.js v22.19.0
+2026-03-31 00:37:03: D:\MarketEngine\node_modules\.bin\tsx.cmd:1
+2026-03-31 00:37:03: @ECHO off
+2026-03-31 00:37:03: ^
+2026-03-31 00:37:03: 
+2026-03-31 00:37:03: SyntaxError: Invalid or unexpected token
+2026-03-31 00:37:03:     at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+2026-03-31 00:37:03:     at Module._compile (node:internal/modules/cjs/loader:1680:20)
+2026-03-31 00:37:03:     at Object..js (node:internal/modules/cjs/loader:1839:10)
+2026-03-31 00:37:03:     at Module.load (node:internal/modules/cjs/loader:1441:32)
+2026-03-31 00:37:03:     at Function._load (node:internal/modules/cjs/loader:1263:12)
+2026-03-31 00:37:03:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-03-31 00:37:03:     at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+2026-03-31 00:37:03:     at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+2026-03-31 00:37:03:     at node:internal/main/run_main_module:36:49
+2026-03-31 00:37:03: 
+2026-03-31 00:37:03: Node.js v22.19.0
+2026-03-31 00:37:08: D:\MarketEngine\node_modules\.bin\tsx.cmd:1
+2026-03-31 00:37:08: @ECHO off
+2026-03-31 00:37:08: ^
+2026-03-31 00:37:08: 
+2026-03-31 00:37:08: SyntaxError: Invalid or unexpected token
+2026-03-31 00:37:08:     at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+2026-03-31 00:37:08:     at Module._compile (node:internal/modules/cjs/loader:1680:20)
+2026-03-31 00:37:08:     at Object..js (node:internal/modules/cjs/loader:1839:10)
+2026-03-31 00:37:08:     at Module.load (node:internal/modules/cjs/loader:1441:32)
+2026-03-31 00:37:08:     at Function._load (node:internal/modules/cjs/loader:1263:12)
+2026-03-31 00:37:08:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-03-31 00:37:08:     at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+2026-03-31 00:37:08:     at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+2026-03-31 00:37:08:     at node:internal/main/run_main_module:36:49
+2026-03-31 00:37:08: 
+2026-03-31 00:37:08: Node.js v22.19.0
+2026-03-31 00:37:13: D:\MarketEngine\node_modules\.bin\tsx.cmd:1
+2026-03-31 00:37:13: @ECHO off
+2026-03-31 00:37:13: ^
+2026-03-31 00:37:13: 
+2026-03-31 00:37:13: SyntaxError: Invalid or unexpected token
+2026-03-31 00:37:13:     at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+2026-03-31 00:37:13:     at Module._compile (node:internal/modules/cjs/loader:1680:20)
+2026-03-31 00:37:13:     at Object..js (node:internal/modules/cjs/loader:1839:10)
+2026-03-31 00:37:13:     at Module.load (node:internal/modules/cjs/loader:1441:32)
+2026-03-31 00:37:13:     at Function._load (node:internal/modules/cjs/loader:1263:12)
+2026-03-31 00:37:13:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-03-31 00:37:13:     at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+2026-03-31 00:37:13:     at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+2026-03-31 00:37:13:     at node:internal/main/run_main_module:36:49
+2026-03-31 00:37:13: 
+2026-03-31 00:37:13: Node.js v22.19.0
+2026-03-31 00:37:19: D:\MarketEngine\node_modules\.bin\tsx.cmd:1
+2026-03-31 00:37:19: @ECHO off
+2026-03-31 00:37:19: ^
+2026-03-31 00:37:19: 
+2026-03-31 00:37:19: SyntaxError: Invalid or unexpected token
+2026-03-31 00:37:19:     at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+2026-03-31 00:37:19:     at Module._compile (node:internal/modules/cjs/loader:1680:20)
+2026-03-31 00:37:19:     at Object..js (node:internal/modules/cjs/loader:1839:10)
+2026-03-31 00:37:19:     at Module.load (node:internal/modules/cjs/loader:1441:32)
+2026-03-31 00:37:19:     at Function._load (node:internal/modules/cjs/loader:1263:12)
+2026-03-31 00:37:19:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-03-31 00:37:19:     at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+2026-03-31 00:37:19:     at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+2026-03-31 00:37:19:     at node:internal/main/run_main_module:36:49
+2026-03-31 00:37:19: 
+2026-03-31 00:37:19: Node.js v22.19.0
+2026-03-31 00:37:24: D:\MarketEngine\node_modules\.bin\tsx.cmd:1
+2026-03-31 00:37:24: @ECHO off
+2026-03-31 00:37:24: ^
+2026-03-31 00:37:24: 
+2026-03-31 00:37:24: SyntaxError: Invalid or unexpected token
+2026-03-31 00:37:24:     at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+2026-03-31 00:37:24:     at Module._compile (node:internal/modules/cjs/loader:1680:20)
+2026-03-31 00:37:24:     at Object..js (node:internal/modules/cjs/loader:1839:10)
+2026-03-31 00:37:24:     at Module.load (node:internal/modules/cjs/loader:1441:32)
+2026-03-31 00:37:24:     at Function._load (node:internal/modules/cjs/loader:1263:12)
+2026-03-31 00:37:24:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-03-31 00:37:24:     at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+2026-03-31 00:37:24:     at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+2026-03-31 00:37:24:     at node:internal/main/run_main_module:36:49
+2026-03-31 00:37:24: 
+2026-03-31 00:37:24: Node.js v22.19.0
+2026-03-31 00:37:29: D:\MarketEngine\node_modules\.bin\tsx.cmd:1
+2026-03-31 00:37:29: @ECHO off
+2026-03-31 00:37:29: ^
+2026-03-31 00:37:29: 
+2026-03-31 00:37:29: SyntaxError: Invalid or unexpected token
+2026-03-31 00:37:29:     at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+2026-03-31 00:37:29:     at Module._compile (node:internal/modules/cjs/loader:1680:20)
+2026-03-31 00:37:29:     at Object..js (node:internal/modules/cjs/loader:1839:10)
+2026-03-31 00:37:29:     at Module.load (node:internal/modules/cjs/loader:1441:32)
+2026-03-31 00:37:29:     at Function._load (node:internal/modules/cjs/loader:1263:12)
+2026-03-31 00:37:29:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-03-31 00:37:29:     at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+2026-03-31 00:37:29:     at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+2026-03-31 00:37:29:     at node:internal/main/run_main_module:36:49
+2026-03-31 00:37:29: 
+2026-03-31 00:37:29: Node.js v22.19.0
+2026-03-31 00:37:34: D:\MarketEngine\node_modules\.bin\tsx.cmd:1
+2026-03-31 00:37:34: @ECHO off
+2026-03-31 00:37:34: ^
+2026-03-31 00:37:34: 
+2026-03-31 00:37:34: SyntaxError: Invalid or unexpected token
+2026-03-31 00:37:34:     at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+2026-03-31 00:37:34:     at Module._compile (node:internal/modules/cjs/loader:1680:20)
+2026-03-31 00:37:34:     at Object..js (node:internal/modules/cjs/loader:1839:10)
+2026-03-31 00:37:34:     at Module.load (node:internal/modules/cjs/loader:1441:32)
+2026-03-31 00:37:34:     at Function._load (node:internal/modules/cjs/loader:1263:12)
+2026-03-31 00:37:34:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-03-31 00:37:34:     at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+2026-03-31 00:37:34:     at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+2026-03-31 00:37:34:     at node:internal/main/run_main_module:36:49
+2026-03-31 00:37:34: 
+2026-03-31 00:37:34: Node.js v22.19.0
+2026-03-31 00:37:39: D:\MarketEngine\node_modules\.bin\tsx.cmd:1
+2026-03-31 00:37:39: @ECHO off
+2026-03-31 00:37:39: ^
+2026-03-31 00:37:39: 
+2026-03-31 00:37:39: SyntaxError: Invalid or unexpected token
+2026-03-31 00:37:39:     at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+2026-03-31 00:37:39:     at Module._compile (node:internal/modules/cjs/loader:1680:20)
+2026-03-31 00:37:39:     at Object..js (node:internal/modules/cjs/loader:1839:10)
+2026-03-31 00:37:39:     at Module.load (node:internal/modules/cjs/loader:1441:32)
+2026-03-31 00:37:39:     at Function._load (node:internal/modules/cjs/loader:1263:12)
+2026-03-31 00:37:39:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-03-31 00:37:39:     at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+2026-03-31 00:37:39:     at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+2026-03-31 00:37:39:     at node:internal/main/run_main_module:36:49
+2026-03-31 00:37:39: 
+2026-03-31 00:37:39: Node.js v22.19.0
+2026-03-31 00:37:44: D:\MarketEngine\node_modules\.bin\tsx.cmd:1
+2026-03-31 00:37:44: @ECHO off
+2026-03-31 00:37:44: ^
+2026-03-31 00:37:44: 
+2026-03-31 00:37:44: SyntaxError: Invalid or unexpected token
+2026-03-31 00:37:44:     at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+2026-03-31 00:37:44:     at Module._compile (node:internal/modules/cjs/loader:1680:20)
+2026-03-31 00:37:44:     at Object..js (node:internal/modules/cjs/loader:1839:10)
+2026-03-31 00:37:44:     at Module.load (node:internal/modules/cjs/loader:1441:32)
+2026-03-31 00:37:44:     at Function._load (node:internal/modules/cjs/loader:1263:12)
+2026-03-31 00:37:44:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-03-31 00:37:44:     at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+2026-03-31 00:37:44:     at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+2026-03-31 00:37:44:     at node:internal/main/run_main_module:36:49
+2026-03-31 00:37:44: 
+2026-03-31 00:37:44: Node.js v22.19.0
+2026-03-31 00:37:49: D:\MarketEngine\node_modules\.bin\tsx.cmd:1
+2026-03-31 00:37:49: @ECHO off
+2026-03-31 00:37:49: ^
+2026-03-31 00:37:49: 
+2026-03-31 00:37:49: SyntaxError: Invalid or unexpected token
+2026-03-31 00:37:49:     at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+2026-03-31 00:37:49:     at Module._compile (node:internal/modules/cjs/loader:1680:20)
+2026-03-31 00:37:49:     at Object..js (node:internal/modules/cjs/loader:1839:10)
+2026-03-31 00:37:49:     at Module.load (node:internal/modules/cjs/loader:1441:32)
+2026-03-31 00:37:49:     at Function._load (node:internal/modules/cjs/loader:1263:12)
+2026-03-31 00:37:49:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-03-31 00:37:49:     at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+2026-03-31 00:37:49:     at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+2026-03-31 00:37:49:     at node:internal/main/run_main_module:36:49
+2026-03-31 00:37:49: 
+2026-03-31 00:37:49: Node.js v22.19.0
+2026-03-31 00:37:54: D:\MarketEngine\node_modules\.bin\tsx.cmd:1
+2026-03-31 00:37:54: @ECHO off
+2026-03-31 00:37:54: ^
+2026-03-31 00:37:54: 
+2026-03-31 00:37:54: SyntaxError: Invalid or unexpected token
+2026-03-31 00:37:54:     at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+2026-03-31 00:37:54:     at Module._compile (node:internal/modules/cjs/loader:1680:20)
+2026-03-31 00:37:54:     at Object..js (node:internal/modules/cjs/loader:1839:10)
+2026-03-31 00:37:54:     at Module.load (node:internal/modules/cjs/loader:1441:32)
+2026-03-31 00:37:54:     at Function._load (node:internal/modules/cjs/loader:1263:12)
+2026-03-31 00:37:54:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-03-31 00:37:54:     at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+2026-03-31 00:37:54:     at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+2026-03-31 00:37:54:     at node:internal/main/run_main_module:36:49
+2026-03-31 00:37:54: 
+2026-03-31 00:37:54: Node.js v22.19.0

@@ -1,0 +1,55 @@
+2026-03-31 01:38:05:   [Agent] insider_trades — TIMEOUT, cancelling run...
+2026-03-31 01:38:05:   [Agent] insider_trades — run cancelled
+2026-03-31 01:38:06:   [Agent] option_chain — TIMEOUT, cancelling run...
+2026-03-31 01:38:06:   [Agent] fii_dii — TIMEOUT, cancelling run...
+2026-03-31 01:38:06:   [Agent] option_chain — run cancelled
+2026-03-31 01:38:06:   [Agent] fii_dii — run cancelled
+2026-03-31 01:43:09:   [Agent] rbi_releases — TIMEOUT, cancelling run...
+2026-03-31 01:43:09:   [Agent] rbi_releases — run cancelled
+2026-03-31 01:43:09: [Alerts] ⚠️ 4 signals failed for 2026-03-30: fii_dii, insider_trades, option_chain, rbi_releases
+2026-04-03 01:38:04:   [Agent] fii_dii — TIMEOUT, cancelling run...
+2026-04-03 01:38:04:   [Agent] fii_dii — run cancelled
+2026-04-03 01:38:05:   [Agent] option_chain — TIMEOUT, cancelling run...
+2026-04-03 01:38:06:   [Agent] option_chain — run cancelled
+2026-04-03 01:43:09:   [Agent] brent_crude — TIMEOUT, cancelling run...
+2026-04-03 01:43:09:   [Agent] brent_crude — run cancelled
+2026-04-03 01:43:09: [Alerts] ⚠️ 3 signals failed for 2026-04-02: fii_dii, option_chain, brent_crude
+2026-04-03 01:43:26: [Pipeline] Database error: error: password authentication failed for user "mse"
+2026-04-03 01:43:26:     at D:\MarketEngine\node_modules\pg-pool\index.js:45:11
+2026-04-03 01:43:26:     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-04-03 01:43:26:     at async runDailyPipeline (D:\MarketEngine\ingestion\src\pipeline.ts:46:7)
+2026-04-03 01:43:26:     at async import_node_cron.default.schedule.timezone (D:\MarketEngine\ingestion\src\index.ts:32:5)
+2026-04-03 01:43:26:     at async Timeout._onTimeout (D:\MarketEngine\node_modules\node-cron\src\scheduler\runner.ts:100:30) {
+2026-04-03 01:43:26:   length: 99,
+2026-04-03 01:43:26:   severity: 'FATAL',
+2026-04-03 01:43:26:   code: '28P01',
+2026-04-03 01:43:26:   detail: undefined,
+2026-04-03 01:43:26:   hint: undefined,
+2026-04-03 01:43:26:   position: undefined,
+2026-04-03 01:43:26:   internalPosition: undefined,
+2026-04-03 01:43:26:   internalQuery: undefined,
+2026-04-03 01:43:26:   where: undefined,
+2026-04-03 01:43:26:   schema: undefined,
+2026-04-03 01:43:26:   table: undefined,
+2026-04-03 01:43:26:   column: undefined,
+2026-04-03 01:43:26:   dataType: undefined,
+2026-04-03 01:43:26:   constraint: undefined,
+2026-04-03 01:43:26:   file: 'auth.c',
+2026-04-03 01:43:26:   line: '331',
+2026-04-03 01:43:26:   routine: 'auth_failed'
+2026-04-03 01:43:26: }
+2026-04-05 01:35:06:   [Agent] nifty_50 — TIMEOUT, cancelling run...
+2026-04-05 01:35:06:   [Agent] nifty_50 — run cancelled
+2026-04-05 01:38:05:   [Agent] option_chain — TIMEOUT, cancelling run...
+2026-04-05 01:38:05:   [Agent] block_deals — TIMEOUT, cancelling run...
+2026-04-05 01:38:05:   [Agent] option_chain — run cancelled
+2026-04-05 01:38:05:   [Agent] block_deals — run cancelled
+2026-04-05 01:43:07:   [Agent] gold_mcx — TIMEOUT, cancelling run...
+2026-04-05 01:43:07:   [Agent] gold_mcx — run cancelled
+2026-04-05 01:43:09:   [Agent] brent_crude — TIMEOUT, cancelling run...
+2026-04-05 01:43:09:   [Agent] usd_inr — TIMEOUT, cancelling run...
+2026-04-05 01:43:09:   [Agent] brent_crude — run cancelled
+2026-04-05 01:43:09:   [Agent] usd_inr — run cancelled
+2026-04-05 01:43:10:   [Agent] asia_cues — TIMEOUT, cancelling run...
+2026-04-05 01:43:10:   [Agent] asia_cues — run cancelled
+2026-04-05 01:43:56: [Alerts] ⚠️ 7 signals failed for 2026-04-04: block_deals, option_chain, nifty_50, usd_inr, brent_crude, gold_mcx, asia_cues

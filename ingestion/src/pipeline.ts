@@ -42,6 +42,12 @@ export async function runDailyPipeline(): Promise<void> {
     let dbBriefId = audit.brief_id;
 
     if (brief) {
+      // Delete old audit records for this date to avoid FK conflicts on re-runs
+      await getPool().query(
+        `DELETE FROM brief_audits WHERE brief_id IN (SELECT id FROM briefs WHERE brief_date = $1)`,
+        [date]
+      );
+
       const result = await getPool().query(
         `INSERT INTO briefs (id, brief_date, beginner_headline, beginner_body, beginner_takeaway, expert_summary, expert_signals, expert_anomalies, disclaimer, held)
          VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10)

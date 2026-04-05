@@ -70,3 +70,68 @@ export type ExpertSignalType = z.infer<typeof ExpertSignal>;
 export type BriefOutputType = z.infer<typeof BriefOutput>;
 export type GateResultType = z.infer<typeof GateResult>;
 export type AuditRecordType = z.infer<typeof AuditRecord>;
+
+// ─── Sector Pulse Dashboard Types ────────────────────────────────────────────
+
+export const SectorId = z.enum([
+  'IT', 'BANKING', 'PHARMA', 'AUTO', 'FMCG', 'ENERGY', 'METALS'
+]);
+
+export const RunWindow = z.enum(['morning', 'midsession', 'closing']);
+
+export const SectorSignalBreakdown = z.object({
+  fii_net_cr: z.number().nullable(),
+  dii_net_cr: z.number().nullable(),
+  pcr: z.number().nullable(),
+  block_deal_net_cr: z.number().nullable(),
+  mf_inflow_cr: z.number().nullable(),
+  data_completeness: z.number().min(0).max(5)
+});
+
+export const SectorScore = z.object({
+  sector: SectorId,
+  score: z.number().min(0).max(100),
+  traffic_light: z.enum(['green', 'amber', 'red']),
+  beginner_label: z.string(),
+  signal_breakdown: SectorSignalBreakdown,
+  computed_at: z.string().datetime(),
+  run_window: RunWindow,
+  is_partial: z.boolean()
+});
+
+export const AnomalyType = z.enum([
+  'consecutive_fii_sell',
+  'pcr_threshold_breach',
+  'score_reversal',
+  'large_block_deal',
+  'dii_absorption_failure',
+  'sector_divergence'
+]);
+
+export const AnomalyEvent = z.object({
+  sector: SectorId,
+  anomaly_type: AnomalyType,
+  severity: z.enum(['HIGH', 'MEDIUM']),
+  raw_data: z.record(z.string(), z.unknown()),
+  alert_text: z.string(),
+  historical_context: z.string().optional(),
+  disclaimer: z.string(),
+  detected_at: z.string().datetime()
+});
+
+export const SectorRunResult = z.object({
+  run_id: z.string().uuid(),
+  run_window: RunWindow,
+  run_time: z.string().datetime(),
+  scores: z.array(SectorScore),
+  anomalies: z.array(AnomalyEvent),
+  agent_payloads: z.array(z.unknown())
+});
+
+export type SectorIdType = z.infer<typeof SectorId>;
+export type RunWindowType = z.infer<typeof RunWindow>;
+export type SectorScoreType = z.infer<typeof SectorScore>;
+export type AnomalyEventType = z.infer<typeof AnomalyEvent>;
+export type AnomalyTypeType = z.infer<typeof AnomalyType>;
+export type SectorRunResultType = z.infer<typeof SectorRunResult>;
+export type SectorSignalBreakdownType = z.infer<typeof SectorSignalBreakdown>;

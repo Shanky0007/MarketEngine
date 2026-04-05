@@ -133,3 +133,108 @@ If unavailable: { "status": "unavailable" }`
 };
 
 export default AGENT_GOALS;
+
+// ─── Sector Pulse Agent Goals ─────────────────────────────────────────────────
+
+export const SECTOR_AGENT_GOALS: Record<string, { url: string; goal: string; signal_id: string; timeout_ms?: number }> = {
+
+  sector_fii_block_deals: {
+    signal_id: "sector_fii_block_deals",
+    url: "https://www.bseindia.com/markets/equity/EQReports/bulk_deals.aspx",
+    timeout_ms: 480_000,
+    goal: `Extract ALL bulk and block deals from today's table.
+For each deal return: company name, BSE scrip code, quantity, price,
+transaction type (buy or sell), deal value in crores.
+Return ONLY JSON:
+{
+  "deals": [
+    {
+      "company": "string",
+      "scrip_code": "string",
+      "quantity": number,
+      "price": number,
+      "type": "buy" | "sell",
+      "value_cr": number
+    }
+  ],
+  "count": number,
+  "session": "string (morning/full day)"
+}
+If no deals today: { "deals": [], "count": 0 }
+If unavailable: { "status": "unavailable" }`
+  },
+
+  sector_pcr: {
+    signal_id: "sector_pcr",
+    url: "https://www.nseindia.com/option-chain",
+    timeout_ms: 480_000,
+    goal: `Extract the put-call ratio for each of these sectoral indices:
+NIFTY IT, NIFTY BANK, NIFTY PHARMA, NIFTY AUTO, NIFTY FMCG,
+NIFTY ENERGY, NIFTY METAL.
+Return ONLY JSON:
+{
+  "sectoral_pcr": [
+    { "index": "string", "pcr": number, "max_pain": number }
+  ],
+  "nifty_pcr": number,
+  "timestamp": "string"
+}
+If a sector index option is not available, set pcr to null.
+If page unavailable: { "status": "unavailable" }`
+  },
+
+  sector_fii_cumulative: {
+    signal_id: "sector_fii_cumulative",
+    url: "https://www.nseindia.com/market-data/fii-dii-activity",
+    goal: `Extract today's cumulative FII and DII net activity to date.
+Return ONLY JSON:
+{
+  "date": "DD-MMM-YYYY",
+  "fii": { "buy_value": number, "sell_value": number, "net_value": number },
+  "dii": { "buy_value": number, "sell_value": number, "net_value": number },
+  "unit": "crores INR",
+  "as_of": "string (time this data was last updated on the page)"
+}
+If unavailable: { "status": "unavailable" }`
+  },
+
+  sector_insider_trades: {
+    signal_id: "sector_insider_trades",
+    url: "https://www.sebi.gov.in/sebiweb/other/OtherAction.do?doRecognisedFpi=yes&intmId=4",
+    timeout_ms: 480_000,
+    goal: `Extract all insider trading disclosures filed today.
+Return ONLY JSON:
+{
+  "filings": [
+    {
+      "company": "string",
+      "scrip_code": "string",
+      "insider_name": "string",
+      "transaction_type": "buy" | "sell",
+      "shares": number,
+      "value_cr": number
+    }
+  ],
+  "count": number
+}
+If none today: { "filings": [], "count": 0 }
+If unavailable: { "status": "unavailable" }`
+  },
+
+  sector_mf_inflows: {
+    signal_id: "sector_mf_inflows",
+    url: "https://www.amfiindia.com/net-data-dated-fund-activity",
+    goal: `Extract the latest weekly mutual fund net inflows by equity category.
+Return ONLY JSON:
+{
+  "week_ending": "string",
+  "categories": [
+    { "category": "string", "net_inflow_cr": number }
+  ]
+}
+Categories to extract: Large Cap, Mid Cap, Small Cap, Sectoral/Thematic,
+IT/Technology funds, Banking/Financial funds, Pharma/Healthcare funds.
+If unavailable: { "status": "unavailable" }`
+  }
+
+};

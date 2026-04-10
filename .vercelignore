@@ -8,3 +8,6 @@ logs/
 node_modules/
 .env
 .env.local
+.claude/
+*.tsbuildinfo
+next-env.d.ts

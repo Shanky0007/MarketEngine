@@ -9,3 +9,8 @@ ingestion/output/
 .vscode 
 MarketStoryEngine_ExecutionPlan_v1.md
 SectorPulseDashboard_ExecutionPlan_v1.md
+logs/
+*.log
+.claude/
+*.tsbuildinfo
+web/next-env.d.ts

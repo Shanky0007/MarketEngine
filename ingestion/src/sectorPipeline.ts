@@ -97,8 +97,8 @@ export async function runSectorPipeline(
       await getPool().query(
         `INSERT INTO sector_scores
            (run_id, run_time, run_window, sector, score, traffic_light,
-            signal_breakdown, beginner_label, data_completeness)
-         VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9)`,
+            signal_breakdown, beginner_label, data_completeness, is_partial)
+         VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10)`,
         [
           runId,
           runTime,
@@ -109,6 +109,7 @@ export async function runSectorPipeline(
           JSON.stringify(score.signal_breakdown),
           score.beginner_label,
           score.signal_breakdown.data_completeness,
+          score.is_partial,
         ]
       );
     } catch (err) {

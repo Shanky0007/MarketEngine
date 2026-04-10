@@ -10,13 +10,9 @@ export default function Navbar() {
         <Link href="/" className="flex items-center">
           <Image src="/logo-horizontal.jpg" alt="Niftea" width={140} height={36} className="h-8 w-auto rounded mix-blend-lighten" />
         </Link>
-        <div className="flex items-center gap-8">
+        <div className="flex items-center gap-6">
           <Link href="/" className="text-[13px] font-medium uppercase tracking-[0.06em] text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-colors duration-150">Briefs</Link>
-          <div className="h-4 w-px bg-[var(--border)]" />
-          <div className="flex items-center gap-2">
-            <div className="w-2 h-2 rounded-full bg-[var(--green)] pulse-dot" />
-            <span className="text-[12px] font-medium text-[var(--text-muted)]">Pipeline Active</span>
-          </div>
+          <Link href="/dashboard" className="text-[13px] font-medium uppercase tracking-[0.06em] text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-colors duration-150">Dashboard</Link>
         </div>
       </div>
     </nav>

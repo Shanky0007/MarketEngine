@@ -13,6 +13,24 @@ Additional resources:
 - [PRE-DEPLOYMENT-CHECKLIST.md](./PRE-DEPLOYMENT-CHECKLIST.md) - Complete before deploying
 - [LAUNCH_CHECKLIST.md](./LAUNCH_CHECKLIST.md) - Pre-launch verification
 
+## Features
+
+### Daily Market Briefs
+- Expert signal aggregation from TinyFish
+- NSE FII/DII data integration
+- Claude-powered synthesis
+- Dual reading levels (Simple + Detailed)
+- Substack email distribution
+- Legal compliance gates
+
+### Sector Pulse Dashboard
+- Real-time sector scoring (0-100)
+- Anomaly detection and alerts
+- Live market signals
+- Visual sector cards with indicators
+- Historical trend analysis
+- API endpoints for data access
+
 ## Architecture
 
 Every brief passes three automated legal gates before publication:
@@ -39,7 +57,12 @@ Every brief passes three automated legal gates before publication:
 
 ### Web Service
 - **Port**: 3000
-- **Purpose**: Archive viewer, admin dashboard
+- **Purpose**: Archive viewer, Sector Pulse Dashboard, admin interface
+- **Routes**:
+  - `/` - Homepage
+  - `/brief/[date]` - Daily brief archive
+  - `/dashboard` - Live Sector Pulse Dashboard
+  - `/api/dashboard/scores` - Sector scores API
 - **Start**: `npm run dev --workspace=web`
 
 ## Quick Start

@@ -17,14 +17,21 @@ Complete guide to deploy Market Story Engine to production.
 ```
 ┌─────────────┐
 │ Your Domain │ → Vercel (Next.js Web App)
-└─────────────┘
-       ↓
-┌─────────────┐
+└─────────────┘      - Daily Briefs Archive
+       ↓              - Sector Pulse Dashboard
+┌─────────────┐      - OG Image Generation
 │  Supabase   │ ← Railway (3 Background Services)
 │  Database   │      - Ingestion (Port 3001)
 └─────────────┘      - Synthesis (Port 3002)
                      - Publisher (Port 3003)
 ```
+
+**What gets deployed:**
+- Daily brief archive at `/brief/[date]`
+- Live Sector Pulse Dashboard at `/dashboard`
+- API endpoints for sector scores
+- Automated daily brief generation (7 AM IST)
+- Sector scoring updates (morning, mid-session, closing)
 
 ---
 

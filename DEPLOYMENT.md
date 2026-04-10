@@ -141,9 +141,12 @@ If you need public endpoints:
 ### Verify Web App (Vercel)
 - [ ] Visit your domain - site loads
 - [ ] Check `/brief/2026-03-30` - brief renders
+- [ ] Check `/dashboard` - Sector Pulse Dashboard loads
+- [ ] Test sector cards and scoring display
 - [ ] Test mobile responsiveness
 - [ ] Verify disclaimer appears
 - [ ] Check OG image: `https://your-domain.com/api/og/2026-03-30`
+- [ ] Test dashboard API: `https://your-domain.com/api/dashboard/scores`
 
 ### Verify Background Services (Railway)
 - [ ] All 3 services show "Active" status

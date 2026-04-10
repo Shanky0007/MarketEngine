@@ -14,7 +14,9 @@
     "poc:nse": "tsx scripts/poc-nse-fii.ts",
     "poc:synthesis": "tsx scripts/poc-synthesis.ts",
     "test:runner": "tsx scripts/test-runner.ts",
-    "backfill": "tsx scripts/backfill-briefs.ts"
+    "backfill": "tsx scripts/backfill-briefs.ts",
+    "verify:deployment": "tsx scripts/verify-deployment.ts",
+    "setup:deployment": "bash scripts/setup-deployment.sh"
   },
   "devDependencies": {
     "@types/pg": "^8.20.0",

@@ -1,0 +1,9 @@
+web/
+output/
+logs/
+*.log
+.next/
+.vercel/
+node_modules/
+.env
+.env.local

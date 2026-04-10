@@ -1,0 +1,15 @@
+[phases.setup]
+nixPkgs = ["nodejs_20", "npm"]
+
+[phases.install]
+cmds = ["npm install"]
+
+[phases.build]
+cmds = [
+  "npm run build --workspace=ingestion",
+  "npm run build --workspace=synthesis",
+  "npm run build --workspace=publisher"
+]
+
+[start]
+cmd = "npm run start --workspace=ingestion & npm run start --workspace=synthesis & npm run start --workspace=publisher & wait"

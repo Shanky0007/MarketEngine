@@ -11,6 +11,10 @@
   "author": "",
   "license": "ISC",
   "description": "",
+  "dependencies": {
+    "fastify": "^5.8.4",
+    "@fastify/cors": "^11.2.0"
+  },
   "devDependencies": {
     "@types/node": "^25.5.0",
     "nodemon": "^3.1.14",

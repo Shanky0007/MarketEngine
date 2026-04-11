@@ -330,3 +330,366 @@
 2026-04-06 00:26:39:    * D:\MarketEngine\package-lock.json
 2026-04-06 00:26:39: 
 2026-04-06 00:26:42: 
+2026-04-07 00:24:26: ▲ Next.js 16.2.1 (Turbopack)
+2026-04-07 00:24:26: - Local:         http://localhost:3000
+2026-04-07 00:24:26: - Network:       http://192.168.1.7:3000
+2026-04-07 00:24:26: - Environments: .env.local
+2026-04-07 00:24:26: ✓ Ready in 1553ms
+2026-04-07 00:24:26: ⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+2026-04-07 00:24:26:  We detected multiple lockfiles and selected the directory of D:\pnpm-lock.yaml as the root directory.
+2026-04-07 00:24:26:  To silence this warning, set `turbopack.root` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+2026-04-07 00:24:26:    See https://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory for more information.
+2026-04-07 00:24:26:  Detected additional lockfiles: 
+2026-04-07 00:24:26:    * D:\MarketEngine\package-lock.json
+2026-04-07 00:24:26: 
+2026-04-07 00:24:27: 
+2026-04-07 00:34:27:  GET / 200 in 1198ms (next.js: 564ms, application-code: 634ms)
+2026-04-07 01:32:02:  GET / 200 in 4.1s (next.js: 112ms, application-code: 4.0s)
+2026-04-07 23:52:35: ▲ Next.js 16.2.1 (Turbopack)
+2026-04-07 23:52:35: - Local:         http://localhost:3000
+2026-04-07 23:52:35: - Network:       http://192.168.1.7:3000
+2026-04-07 23:52:35: - Environments: .env.local
+2026-04-07 23:52:35: ✓ Ready in 1911ms
+2026-04-07 23:52:35: ⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+2026-04-07 23:52:35:  We detected multiple lockfiles and selected the directory of D:\pnpm-lock.yaml as the root directory.
+2026-04-07 23:52:35:  To silence this warning, set `turbopack.root` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+2026-04-07 23:52:35:    See https://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory for more information.
+2026-04-07 23:52:35:  Detected additional lockfiles: 
+2026-04-07 23:52:35:    * D:\MarketEngine\package-lock.json
+2026-04-07 23:52:35: 
+2026-04-07 23:52:39: 
+2026-04-08 18:01:04: ▲ Next.js 16.2.1 (Turbopack)
+2026-04-08 18:01:04: - Local:         http://localhost:3000
+2026-04-08 18:01:04: - Network:       http://192.168.1.7:3000
+2026-04-08 18:01:04: - Environments: .env.local
+2026-04-08 18:01:04: ✓ Ready in 1939ms
+2026-04-08 18:01:04: ⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+2026-04-08 18:01:04:  We detected multiple lockfiles and selected the directory of D:\pnpm-lock.yaml as the root directory.
+2026-04-08 18:01:04:  To silence this warning, set `turbopack.root` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+2026-04-08 18:01:04:    See https://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory for more information.
+2026-04-08 18:01:04:  Detected additional lockfiles: 
+2026-04-08 18:01:04:    * D:\MarketEngine\package-lock.json
+2026-04-08 18:01:04: 
+2026-04-08 18:01:09: 
+2026-04-08 21:49:41: ⨯ Error: connect ECONNREFUSED 127.0.0.1:5432
+2026-04-08 21:49:41:     at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:5432)
+2026-04-08 21:49:41:     at async getLatestBrief (lib\db.ts:23:15)
+2026-04-08 21:49:41:     at async HomePage (app\page.tsx:11:18)
+2026-04-08 21:49:41:   21 |
+2026-04-08 21:49:41:   22 | export async function getLatestBrief(): Promise<BriefRow | null> {
+2026-04-08 21:49:41: > 23 |   const res = await pool.query(
+2026-04-08 21:49:41:      |               ^
+2026-04-08 21:49:41:   24 |     `SELECT id, brief_date::text as brief_date, beginner_headline, beginner_body, beginner...
+2026-04-08 21:49:41:   25 |   );
+2026-04-08 21:49:41:   26 |   return res.rows[0] || null; {
+2026-04-08 21:49:41:   errno: -4078,
+2026-04-08 21:49:41:   code: 'ECONNREFUSED',
+2026-04-08 21:49:41:   syscall: 'connect',
+2026-04-08 21:49:41:   address: '127.0.0.1',
+2026-04-08 21:49:41:   port: 5432,
+2026-04-08 21:49:41:   digest: '2868730758'
+2026-04-08 21:49:41: }
+2026-04-08 21:49:41:  GET / 200 in 1341ms (next.js: 724ms, application-code: 617ms)
+2026-04-08 21:54:48: ⨯ Error: connect ECONNREFUSED 127.0.0.1:5432
+2026-04-08 21:54:48:     at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:5432)
+2026-04-08 21:54:48:     at async getLatestBrief (lib\db.ts:23:15)
+2026-04-08 21:54:48:     at async HomePage (app\page.tsx:11:18)
+2026-04-08 21:54:48:   21 |
+2026-04-08 21:54:48:   22 | export async function getLatestBrief(): Promise<BriefRow | null> {
+2026-04-08 21:54:48: > 23 |   const res = await pool.query(
+2026-04-08 21:54:48:      |               ^
+2026-04-08 21:54:48:   24 |     `SELECT id, brief_date::text as brief_date, beginner_headline, beginner_body, beginner...
+2026-04-08 21:54:48:   25 |   );
+2026-04-08 21:54:48:   26 |   return res.rows[0] || null; {
+2026-04-08 21:54:48:   errno: -4078,
+2026-04-08 21:54:48:   code: 'ECONNREFUSED',
+2026-04-08 21:54:48:   syscall: 'connect',
+2026-04-08 21:54:48:   address: '127.0.0.1',
+2026-04-08 21:54:48:   port: 5432,
+2026-04-08 21:54:48:   digest: '2868730758'
+2026-04-08 21:54:48: }
+2026-04-08 21:54:48:  GET / 500 in 201ms (next.js: 23ms, application-code: 178ms)
+2026-04-10 00:19:14: ▲ Next.js 16.2.1 (Turbopack)
+2026-04-10 00:19:14: - Local:         http://localhost:3000
+2026-04-10 00:19:14: - Network:       http://192.168.1.7:3000
+2026-04-10 00:19:14: - Environments: .env.local
+2026-04-10 00:19:14: ✓ Ready in 1933ms
+2026-04-10 00:19:14: ⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+2026-04-10 00:19:14:  We detected multiple lockfiles and selected the directory of D:\pnpm-lock.yaml as the root directory.
+2026-04-10 00:19:14:  To silence this warning, set `turbopack.root` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+2026-04-10 00:19:14:    See https://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory for more information.
+2026-04-10 00:19:14:  Detected additional lockfiles: 
+2026-04-10 00:19:14:    * D:\MarketEngine\package-lock.json
+2026-04-10 00:19:14: 
+2026-04-10 00:19:17: 
+2026-04-10 04:40:46: ▲ Next.js 16.2.1 (Turbopack)
+2026-04-10 04:40:46: - Local:         http://localhost:3000
+2026-04-10 04:40:46: - Network:       http://192.168.1.7:3000
+2026-04-10 04:40:46: - Environments: .env.local
+2026-04-10 04:40:46: ✓ Ready in 1745ms
+2026-04-10 04:40:46: ⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+2026-04-10 04:40:46:  We detected multiple lockfiles and selected the directory of D:\pnpm-lock.yaml as the root directory.
+2026-04-10 04:40:46:  To silence this warning, set `turbopack.root` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+2026-04-10 04:40:46:    See https://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory for more information.
+2026-04-10 04:40:46:  Detected additional lockfiles: 
+2026-04-10 04:40:46:    * D:\MarketEngine\package-lock.json
+2026-04-10 04:40:46: 
+2026-04-10 04:40:48: 
+2026-04-10 09:19:35: ▲ Next.js 16.2.1 (Turbopack)
+2026-04-10 09:19:35: - Local:         http://localhost:3000
+2026-04-10 09:19:35: - Network:       http://192.168.1.7:3000
+2026-04-10 09:19:35: - Environments: .env.local
+2026-04-10 09:19:35: ✓ Ready in 2.5s
+2026-04-10 09:19:36: ⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+2026-04-10 09:19:36:  We detected multiple lockfiles and selected the directory of D:\pnpm-lock.yaml as the root directory.
+2026-04-10 09:19:36:  To silence this warning, set `turbopack.root` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+2026-04-10 09:19:36:    See https://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory for more information.
+2026-04-10 09:19:36:  Detected additional lockfiles: 
+2026-04-10 09:19:36:    * D:\MarketEngine\package-lock.json
+2026-04-10 09:19:36: 
+2026-04-10 09:19:40: 
+2026-04-10 09:35:39: [?25h
+2026-04-10 09:35:39: 
+2026-04-10 21:38:45: ▲ Next.js 16.2.1 (Turbopack)
+2026-04-10 21:38:45: - Local:         http://localhost:3000
+2026-04-10 21:38:45: - Network:       http://192.168.1.7:3000
+2026-04-10 21:38:45: - Environments: .env.local
+2026-04-10 21:38:45: ✓ Ready in 1913ms
+2026-04-10 21:38:45: ⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+2026-04-10 21:38:45:  We detected multiple lockfiles and selected the directory of D:\pnpm-lock.yaml as the root directory.
+2026-04-10 21:38:45:  To silence this warning, set `turbopack.root` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+2026-04-10 21:38:45:    See https://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory for more information.
+2026-04-10 21:38:45:  Detected additional lockfiles: 
+2026-04-10 21:38:45:    * D:\MarketEngine\package-lock.json
+2026-04-10 21:38:45: 
+2026-04-10 21:38:48: 
+2026-04-11 00:04:53:  GET /dashboard 200 in 2.3s (next.js: 1022ms, application-code: 1290ms)
+2026-04-11 00:04:59:  GET /dashboard 200 in 180ms (next.js: 11ms, application-code: 169ms)
+2026-04-11 00:05:17:  GET /dashboard 200 in 162ms (next.js: 17ms, application-code: 145ms)
+2026-04-11 00:05:27: ⨯ Error: connect ECONNREFUSED 127.0.0.1:5432
+2026-04-11 00:05:27:     at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:5432)
+2026-04-11 00:05:27:     at async getLatestBrief (lib\db.ts:23:15)
+2026-04-11 00:05:27:     at async HomePage (app\page.tsx:11:18)
+2026-04-11 00:05:27:   21 |
+2026-04-11 00:05:27:   22 | export async function getLatestBrief(): Promise<BriefRow | null> {
+2026-04-11 00:05:27: > 23 |   const res = await pool.query(
+2026-04-11 00:05:27:      |               ^
+2026-04-11 00:05:27:   24 |     `SELECT id, brief_date::text as brief_date, beginner_headline, beginner_body, beginner...
+2026-04-11 00:05:27:   25 |   );
+2026-04-11 00:05:27:   26 |   return res.rows[0] || null; {
+2026-04-11 00:05:27:   errno: -4078,
+2026-04-11 00:05:27:   code: 'ECONNREFUSED',
+2026-04-11 00:05:27:   syscall: 'connect',
+2026-04-11 00:05:27:   address: '127.0.0.1',
+2026-04-11 00:05:27:   port: 5432,
+2026-04-11 00:05:27:   digest: '2868730758'
+2026-04-11 00:05:27: }
+2026-04-11 00:05:27:  GET / 200 in 291ms (next.js: 129ms, application-code: 162ms)
+2026-04-11 00:05:27: [browser] Uncaught Error: connect ECONNREFUSED 127.0.0.1:5432
+2026-04-11 00:05:27:     at <unknown> (Error: connect ECONNREFUSED 127.0.0.1:5432)
+2026-04-11 00:05:27:     at getLatestBrief (lib\db.ts:23:15)
+2026-04-11 00:05:27:     at HomePage (app\page.tsx:11:18)
+2026-04-11 00:05:27:     at resolveErrorDev (.next\dev\static\chunks\08_-_next_dist_compiled_react-server-dom-turbopack_0bcb~h2._.js:1919:150)
+2026-04-11 00:05:27:     at processFullStringRow (.next\dev\static\chunks\08_-_next_dist_compiled_react-server-dom-turbopack_0bcb~h2._.js:2434:29)
+2026-04-11 00:05:27:     at processFullBinaryRow (.next\dev\static\chunks\08_-_next_dist_compiled_react-server-dom-turbopack_0bcb~h2._.js:2393:9)
+2026-04-11 00:05:27:     at processBinaryChunk (.next\dev\static\chunks\08_-_next_dist_compiled_react-server-dom-turbopack_0bcb~h2._.js:2502:221)
+2026-04-11 00:05:27:     at progress (.next\dev\static\chunks\08_-_next_dist_compiled_react-server-dom-turbopack_0bcb~h2._.js:2689:13)
+2026-04-11 00:05:27:   21 |
+2026-04-11 00:05:27:   22 | export async function getLatestBrief(): Promise<BriefRow | null> {
+2026-04-11 00:05:27: > 23 |   const res = await pool.query(
+2026-04-11 00:05:27:      |               ^
+2026-04-11 00:05:27:   24 |     `SELECT id, brief_date::text as brief_date, beginner_headline, beginner_body, beginner...
+2026-04-11 00:05:27:   25 |   );
+2026-04-11 00:05:27:   26 |   return res.rows[0] || null;
+2026-04-11 00:06:10:  GET / 200 in 552ms (next.js: 210ms, application-code: 342ms)
+2026-04-11 00:07:53:  GET / 200 in 428ms (next.js: 17ms, application-code: 411ms)
+2026-04-11 00:08:16:  GET /dashboard 200 in 298ms (next.js: 8ms, application-code: 290ms)
+2026-04-11 00:08:55:  GET /dashboard 200 in 197ms (next.js: 12ms, application-code: 185ms)
+2026-04-11 00:09:26:  GET /dashboard 200 in 212ms (next.js: 16ms, application-code: 196ms)
+2026-04-11 00:10:29:  GET /api/dashboard/scores 200 in 1411ms (next.js: 1280ms, application-code: 131ms)
+2026-04-11 00:11:27: ✓ Compiled in 320ms
+2026-04-11 00:11:27:  GET /dashboard 200 in 694ms (next.js: 315ms, application-code: 379ms)
+2026-04-11 00:11:27:  GET /dashboard 200 in 179ms (next.js: 28ms, application-code: 151ms)
+2026-04-11 00:11:28:  GET /api/dashboard/scores 200 in 222ms (next.js: 43ms, application-code: 180ms)
+2026-04-11 00:11:46: ✓ Compiled in 498ms
+2026-04-11 00:11:47:  GET /dashboard 200 in 598ms (next.js: 267ms, application-code: 330ms)
+2026-04-11 00:11:47:  GET /dashboard 200 in 165ms (next.js: 15ms, application-code: 150ms)
+2026-04-11 00:12:28:  GET /api/dashboard/scores 200 in 143ms (next.js: 61ms, application-code: 82ms)
+2026-04-11 00:13:28:  GET /api/dashboard/scores 200 in 109ms (next.js: 11ms, application-code: 99ms)
+2026-04-11 00:14:28:  GET /api/dashboard/scores 200 in 116ms (next.js: 10ms, application-code: 106ms)
+2026-04-11 00:15:28:  GET /api/dashboard/scores 200 in 128ms (next.js: 9ms, application-code: 119ms)
+2026-04-11 00:16:30:  GET /api/dashboard/scores 200 in 84ms (next.js: 6ms, application-code: 78ms)
+2026-04-11 00:17:28:  GET /api/dashboard/scores 200 in 100ms (next.js: 7ms, application-code: 93ms)
+2026-04-11 00:17:28: ✓ Compiled in 83ms
+2026-04-11 00:17:38: ✓ Compiled in 100ms
+2026-04-11 00:17:57:  GET /dashboard 200 in 749ms (next.js: 286ms, application-code: 463ms)
+2026-04-11 00:18:58:  GET /api/dashboard/scores 200 in 181ms (next.js: 18ms, application-code: 163ms)
+2026-04-11 00:18:59: ✓ Compiled in 430ms
+2026-04-11 00:19:20: ✓ Compiled in 569ms
+2026-04-11 00:19:21:  GET /dashboard 200 in 764ms (next.js: 287ms, application-code: 478ms)
+2026-04-11 00:19:21:  GET /dashboard 200 in 201ms (next.js: 14ms, application-code: 187ms)
+2026-04-11 00:19:42: ✓ Compiled in 382ms
+2026-04-11 00:20:21:  GET /api/dashboard/scores 200 in 155ms (next.js: 57ms, application-code: 97ms)
+2026-04-11 00:23:35: [browser] Uncaught TypeError: Component is not a function
+2026-04-11 00:23:35:     at Object.react_stack_bottom_frame (.next\dev\static\chunks\08_-_next_dist_compiled_react-dom_0l9.12x._.js:15037:24)
+2026-04-11 00:23:35:     at renderWithHooks (.next\dev\static\chunks\08_-_next_dist_compiled_react-dom_0l9.12x._.js:4620:24)
+2026-04-11 00:23:35:     at updateFunctionComponent (.next\dev\static\chunks\08_-_next_dist_compiled_react-dom_0l9.12x._.js:6081:21)
+2026-04-11 00:23:35:     at beginWork (.next\dev\static\chunks\08_-_next_dist_compiled_react-dom_0l9.12x._.js:6691:24)
+2026-04-11 00:23:35:     at runWithFiberInDEV (.next\dev\static\chunks\08_-_next_dist_compiled_react-dom_0l9.12x._.js:965:74)
+2026-04-11 00:23:35:     at performUnitOfWork (.next\dev\static\chunks\08_-_next_dist_compiled_react-dom_0l9.12x._.js:9555:97)
+2026-04-11 00:23:35:     at workLoopSync (.next\dev\static\chunks\08_-_next_dist_compiled_react-dom_0l9.12x._.js:9449:40)
+2026-04-11 00:23:35:     at renderRootSync (.next\dev\static\chunks\08_-_next_dist_compiled_react-dom_0l9.12x._.js:9433:13)
+2026-04-11 00:23:35:     at performWorkOnRoot (.next\dev\static\chunks\08_-_next_dist_compiled_react-dom_0l9.12x._.js:9098:47)
+2026-04-11 00:23:35:     at performWorkOnRootViaSchedulerTask (.next\dev\static\chunks\08_-_next_dist_compiled_react-dom_0l9.12x._.js:10255:9)
+2026-04-11 00:23:35:     at MessagePort.performWorkUntilDeadline (.next\dev\static\chunks\08_-_next_dist_compiled_0po.lop._.js:2647:64)
+2026-04-11 00:23:35:     at LiveDashboard (.next\dev\static\chunks\MarketEngine_web_app_04qrg5r._.js:174:231)
+2026-04-11 00:23:35:     at DashboardPage (app\dashboard\page.tsx:95:9)
+2026-04-11 00:23:35:   93 |
+2026-04-11 00:23:35:   94 |         {/* Live-updating header + sector grid (polls every 60s) */}
+2026-04-11 00:23:35: > 95 |         <LiveDashboard initialScores={scores} initialAnomalies={anomalies} />
+2026-04-11 00:23:35:      |         ^
+2026-04-11 00:23:35:   96 |
+2026-04-11 00:23:35:   97 |         {/* Footer disclaimer */}
+2026-04-11 00:23:35:   98 |         <footer className="pt-4" style={{ borderTop: '1px solid var(--border)' }}>
+2026-04-11 00:26:06:  GET /dashboard 200 in 646ms (next.js: 218ms, application-code: 428ms)
+2026-04-11 00:26:29:  GET /dashboard 200 in 175ms (next.js: 18ms, application-code: 157ms)
+2026-04-11 00:26:42:  GET / 200 in 263ms (next.js: 56ms, application-code: 206ms)
+2026-04-11 00:26:47:  GET /dashboard 200 in 205ms (next.js: 11ms, application-code: 194ms)
+2026-04-11 00:27:48:  GET /api/dashboard/scores 200 in 198ms (next.js: 7ms, application-code: 191ms)
+2026-04-11 00:27:52:  GET /dashboard 200 in 570ms (next.js: 293ms, application-code: 277ms)
+2026-04-11 00:28:18:  GET /dashboard 200 in 367ms (next.js: 10ms, application-code: 357ms)
+2026-04-11 00:29:19:  GET /api/dashboard/scores 200 in 95ms (next.js: 4ms, application-code: 91ms)
+2026-04-11 00:30:19:  GET /api/dashboard/scores 200 in 97ms (next.js: 8ms, application-code: 88ms)
+2026-04-11 00:31:19:  GET /api/dashboard/scores 200 in 97ms (next.js: 5ms, application-code: 92ms)
+2026-04-11 00:32:19:  GET /api/dashboard/scores 200 in 133ms (next.js: 6ms, application-code: 127ms)
+2026-04-11 00:33:19:  GET /api/dashboard/scores 200 in 87ms (next.js: 8ms, application-code: 79ms)
+2026-04-11 00:34:19:  GET /api/dashboard/scores 200 in 197ms (next.js: 12ms, application-code: 185ms)
+2026-04-11 00:35:36:  GET /api/dashboard/scores 200 in 86ms (next.js: 6ms, application-code: 80ms)
+2026-04-11 00:36:29:  GET /api/dashboard/scores 200 in 73ms (next.js: 5ms, application-code: 69ms)
+2026-04-11 00:37:19:  GET /api/dashboard/scores 200 in 101ms (next.js: 9ms, application-code: 92ms)
+2026-04-11 00:38:19:  GET /api/dashboard/scores 200 in 86ms (next.js: 5ms, application-code: 82ms)
+2026-04-11 00:39:36:  GET /api/dashboard/scores 200 in 88ms (next.js: 8ms, application-code: 80ms)
+2026-04-11 00:40:36:  GET /api/dashboard/scores 200 in 92ms (next.js: 10ms, application-code: 82ms)
+2026-04-11 00:41:36:  GET /api/dashboard/scores 200 in 79ms (next.js: 6ms, application-code: 73ms)
+2026-04-11 00:42:36:  GET /api/dashboard/scores 200 in 91ms (next.js: 11ms, application-code: 80ms)
+2026-04-11 00:43:36:  GET /api/dashboard/scores 200 in 77ms (next.js: 6ms, application-code: 71ms)
+2026-04-11 00:44:27:  GET /api/dashboard/scores 200 in 87ms (next.js: 6ms, application-code: 81ms)
+2026-04-11 00:45:19:  GET /api/dashboard/scores 200 in 110ms (next.js: 8ms, application-code: 101ms)
+2026-04-11 00:45:36: ✓ Compiled in 98ms
+2026-04-11 00:45:46: ✓ Compiled in 47ms
+2026-04-11 00:45:53: ✓ Compiled in 84ms
+2026-04-11 00:46:02: ✓ Compiled in 203ms
+2026-04-11 00:46:13: ✓ Compiled in 121ms
+2026-04-11 00:46:29: ✓ Compiled in 82ms
+2026-04-11 00:46:37:  GET /api/dashboard/scores 200 in 80ms (next.js: 6ms, application-code: 74ms)
+2026-04-11 00:47:37:  GET /api/dashboard/scores 200 in 101ms (next.js: 5ms, application-code: 96ms)
+2026-04-11 00:48:37:  GET /api/dashboard/scores 200 in 86ms (next.js: 6ms, application-code: 80ms)
+2026-04-11 00:49:37:  GET /api/dashboard/scores 200 in 108ms (next.js: 5ms, application-code: 103ms)
+2026-04-11 00:50:37:  GET /api/dashboard/scores 200 in 119ms (next.js: 13ms, application-code: 105ms)
+2026-04-11 00:51:37:  GET /api/dashboard/scores 200 in 94ms (next.js: 7ms, application-code: 88ms)
+2026-04-11 00:53:36:  GET /api/dashboard/scores 200 in 74ms (next.js: 5ms, application-code: 69ms)
+2026-04-11 00:55:36:  GET /api/dashboard/scores 200 in 70ms (next.js: 7ms, application-code: 63ms)
+2026-04-11 00:57:36:  GET /api/dashboard/scores 200 in 94ms (next.js: 13ms, application-code: 81ms)
+2026-04-11 00:59:36:  GET /api/dashboard/scores 200 in 89ms (next.js: 8ms, application-code: 82ms)
+2026-04-11 01:01:36:  GET /api/dashboard/scores 200 in 85ms (next.js: 14ms, application-code: 71ms)
+2026-04-11 01:03:36:  GET /api/dashboard/scores 200 in 79ms (next.js: 8ms, application-code: 72ms)
+2026-04-11 01:05:36:  GET /api/dashboard/scores 200 in 99ms (next.js: 8ms, application-code: 92ms)
+2026-04-11 01:06:40:  GET /api/dashboard/scores 200 in 193ms (next.js: 5ms, application-code: 188ms)
+2026-04-11 01:07:37:  GET /api/dashboard/scores 200 in 113ms (next.js: 7ms, application-code: 105ms)
+2026-04-11 01:08:21: ✓ Compiled in 153ms
+2026-04-11 01:08:37:  GET /api/dashboard/scores 200 in 91ms (next.js: 6ms, application-code: 84ms)
+2026-04-11 01:10:36:  GET /api/dashboard/scores 200 in 86ms (next.js: 11ms, application-code: 75ms)
+2026-04-11 01:12:36:  GET /api/dashboard/scores 200 in 178ms (next.js: 9ms, application-code: 169ms)
+2026-04-11 01:14:36:  GET /api/dashboard/scores 200 in 76ms (next.js: 7ms, application-code: 69ms)
+2026-04-11 01:15:59:  GET /api/dashboard/scores 200 in 176ms (next.js: 8ms, application-code: 169ms)
+2026-04-11 01:16:10:  GET /dashboard 200 in 745ms (next.js: 298ms, application-code: 448ms)
+2026-04-11 01:16:15:  GET /dashboard 200 in 31ms (next.js: 11ms, application-code: 19ms)
+2026-04-11 01:16:15:  GET /dashboard 200 in 153ms (next.js: 10ms, application-code: 144ms)
+2026-04-11 01:16:16:  GET / 200 in 501ms (next.js: 295ms, application-code: 206ms)
+2026-04-11 01:16:18:  GET /dashboard 200 in 106ms (next.js: 6ms, application-code: 100ms)
+2026-04-11 01:17:19:  GET /api/dashboard/scores 200 in 103ms (next.js: 12ms, application-code: 91ms)
+2026-04-11 01:18:19:  GET /api/dashboard/scores 200 in 95ms (next.js: 8ms, application-code: 87ms)
+2026-04-11 01:19:19:  GET /api/dashboard/scores 200 in 80ms (next.js: 11ms, application-code: 70ms)
+2026-04-11 01:20:19:  GET /api/dashboard/scores 200 in 132ms (next.js: 8ms, application-code: 124ms)
+2026-04-11 01:21:19:  GET /api/dashboard/scores 200 in 71ms (next.js: 6ms, application-code: 65ms)
+2026-04-11 01:22:19:  GET /api/dashboard/scores 200 in 173ms (next.js: 3ms, application-code: 170ms)
+2026-04-11 01:23:36:  GET /api/dashboard/scores 200 in 81ms (next.js: 6ms, application-code: 75ms)
+2026-04-11 01:24:36:  GET /api/dashboard/scores 200 in 97ms (next.js: 8ms, application-code: 89ms)
+2026-04-11 01:25:36:  GET /api/dashboard/scores 200 in 83ms (next.js: 5ms, application-code: 79ms)
+2026-04-11 01:26:36:  GET /api/dashboard/scores 200 in 70ms (next.js: 5ms, application-code: 66ms)
+2026-04-11 01:27:36:  GET /api/dashboard/scores 200 in 174ms (next.js: 6ms, application-code: 169ms)
+2026-04-11 01:28:36:  GET /api/dashboard/scores 200 in 105ms (next.js: 6ms, application-code: 99ms)
+2026-04-11 01:29:36:  GET /api/dashboard/scores 200 in 106ms (next.js: 11ms, application-code: 94ms)
+2026-04-11 01:30:36:  GET /api/dashboard/scores 200 in 81ms (next.js: 6ms, application-code: 75ms)
+2026-04-11 01:31:36:  GET /api/dashboard/scores 200 in 85ms (next.js: 8ms, application-code: 77ms)
+2026-04-11 01:32:36:  GET /api/dashboard/scores 200 in 77ms (next.js: 5ms, application-code: 72ms)
+2026-04-11 01:33:36:  GET /api/dashboard/scores 200 in 75ms (next.js: 10ms, application-code: 65ms)
+2026-04-11 01:34:36:  GET /api/dashboard/scores 200 in 87ms (next.js: 5ms, application-code: 82ms)
+2026-04-11 01:35:36:  GET /api/dashboard/scores 200 in 97ms (next.js: 7ms, application-code: 91ms)
+2026-04-11 01:36:36:  GET /api/dashboard/scores 200 in 112ms (next.js: 6ms, application-code: 107ms)
+2026-04-11 01:37:36:  GET /api/dashboard/scores 200 in 91ms (next.js: 7ms, application-code: 85ms)
+2026-04-11 01:38:36:  GET /api/dashboard/scores 200 in 76ms (next.js: 5ms, application-code: 71ms)
+2026-04-11 01:39:36:  GET /api/dashboard/scores 200 in 82ms (next.js: 7ms, application-code: 75ms)
+2026-04-11 01:40:36:  GET /api/dashboard/scores 200 in 205ms (next.js: 10ms, application-code: 195ms)
+2026-04-11 01:41:36:  GET /api/dashboard/scores 200 in 75ms (next.js: 6ms, application-code: 69ms)
+2026-04-11 01:42:36:  GET /api/dashboard/scores 200 in 72ms (next.js: 4ms, application-code: 68ms)
+2026-04-11 01:43:36:  GET /api/dashboard/scores 200 in 66ms (next.js: 5ms, application-code: 60ms)
+2026-04-11 01:44:36:  GET /api/dashboard/scores 200 in 97ms (next.js: 7ms, application-code: 90ms)
+2026-04-11 01:45:36:  GET /api/dashboard/scores 200 in 73ms (next.js: 6ms, application-code: 67ms)
+2026-04-11 01:46:36:  GET /api/dashboard/scores 200 in 83ms (next.js: 5ms, application-code: 78ms)
+2026-04-11 01:47:36:  GET /api/dashboard/scores 200 in 97ms (next.js: 9ms, application-code: 88ms)
+2026-04-11 01:48:36:  GET /api/dashboard/scores 200 in 170ms (next.js: 6ms, application-code: 164ms)
+2026-04-11 01:49:36:  GET /api/dashboard/scores 200 in 125ms (next.js: 8ms, application-code: 117ms)
+2026-04-11 01:50:36:  GET /api/dashboard/scores 200 in 90ms (next.js: 7ms, application-code: 82ms)
+2026-04-11 01:51:36:  GET /api/dashboard/scores 200 in 108ms (next.js: 5ms, application-code: 103ms)
+2026-04-11 01:52:36:  GET /api/dashboard/scores 200 in 83ms (next.js: 6ms, application-code: 77ms)
+2026-04-11 01:53:36:  GET /api/dashboard/scores 200 in 85ms (next.js: 7ms, application-code: 79ms)
+2026-04-11 01:54:36:  GET /api/dashboard/scores 200 in 67ms (next.js: 6ms, application-code: 61ms)
+2026-04-11 01:55:36:  GET /api/dashboard/scores 200 in 80ms (next.js: 6ms, application-code: 74ms)
+2026-04-11 01:56:29: ⚠ Found a change in next.config.ts. Restarting the server to apply the changes...
+2026-04-11 01:56:31: ▲ Next.js 16.2.1 (Turbopack)
+2026-04-11 01:56:31: - Local:         http://localhost:3000
+2026-04-11 01:56:31: - Network:       http://192.168.1.7:3000
+2026-04-11 01:56:31: - Environments: .env.local
+2026-04-11 01:56:31: ✓ Ready in 1810ms
+2026-04-11 01:56:31: ⚠ `images.domains` is deprecated in favor of `images.remotePatterns`. Please update next.config.ts to protect your application from malicious users.
+2026-04-11 01:56:31: ⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+2026-04-11 01:56:31:  We detected multiple lockfiles and selected the directory of D:\pnpm-lock.yaml as the root directory.
+2026-04-11 01:56:31:  To silence this warning, set `turbopack.root` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+2026-04-11 01:56:31:    See https://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory for more information.
+2026-04-11 01:56:31:  Detected additional lockfiles: 
+2026-04-11 01:56:31:    * D:\MarketEngine\package-lock.json
+2026-04-11 01:56:31: 
+2026-04-11 01:56:36: 
+2026-04-11 01:56:39:  GET /api/dashboard/scores 200 in 2.2s (next.js: 731ms, application-code: 1515ms)
+2026-04-11 01:56:39:  GET /dashboard 200 in 1830ms (next.js: 388ms, application-code: 1442ms)
+2026-04-11 01:57:43:  GET /api/dashboard/scores 200 in 104ms (next.js: 14ms, application-code: 90ms)
+2026-04-11 01:58:43:  GET /api/dashboard/scores 200 in 94ms (next.js: 7ms, application-code: 87ms)
+2026-04-11 01:59:43:  GET /api/dashboard/scores 200 in 79ms (next.js: 9ms, application-code: 71ms)
+2026-04-11 02:00:43:  GET /api/dashboard/scores 200 in 95ms (next.js: 9ms, application-code: 86ms)
+2026-04-11 02:01:43:  GET /api/dashboard/scores 200 in 107ms (next.js: 10ms, application-code: 97ms)
+2026-04-11 02:02:43:  GET /api/dashboard/scores 200 in 112ms (next.js: 8ms, application-code: 104ms)
+2026-04-11 02:04:36:  GET /api/dashboard/scores 200 in 111ms (next.js: 8ms, application-code: 103ms)
+2026-04-11 02:05:36:  GET /api/dashboard/scores 200 in 89ms (next.js: 5ms, application-code: 84ms)
+2026-04-11 02:06:36:  GET /api/dashboard/scores 200 in 89ms (next.js: 8ms, application-code: 82ms)
+2026-04-11 02:07:36:  GET /api/dashboard/scores 200 in 82ms (next.js: 5ms, application-code: 77ms)
+2026-04-11 02:08:36:  GET /api/dashboard/scores 200 in 83ms (next.js: 7ms, application-code: 76ms)
+2026-04-11 02:09:36:  GET /api/dashboard/scores 200 in 93ms (next.js: 5ms, application-code: 88ms)
+2026-04-11 02:10:36:  GET /api/dashboard/scores 200 in 70ms (next.js: 8ms, application-code: 62ms)
+2026-04-11 02:11:08:  GET /api/dashboard/scores 200 in 68ms (next.js: 6ms, application-code: 62ms)
+2026-04-11 02:11:09:  GET / 200 in 306ms (next.js: 132ms, application-code: 174ms)
+2026-04-11 02:30:34:   Reload env: .env.local
+2026-04-11 02:30:35:  GET / 200 in 293ms (next.js: 153ms, application-code: 140ms)
+2026-04-11 02:34:01:   Reload env: .env.local
+2026-04-11 02:34:02:  GET / 200 in 796ms (next.js: 60ms, application-code: 736ms)
+2026-04-11 02:34:34:   Reload env: .env.local
+2026-04-11 02:34:35:  GET / 200 in 552ms (next.js: 68ms, application-code: 483ms)
+2026-04-11 02:34:46:   Reload env: .env.local
+2026-04-11 02:34:47:  GET / 200 in 1006ms (next.js: 95ms, application-code: 911ms)
+2026-04-11 02:35:15:   Reload env: .env.local
+2026-04-11 02:35:16:  GET / 200 in 1013ms (next.js: 62ms, application-code: 952ms)
+2026-04-11 02:36:17:   Reload env: .env.local
+2026-04-11 02:36:19:  GET / 200 in 908ms (next.js: 80ms, application-code: 829ms)
+2026-04-11 02:43:38:   Reload env: .env.local
+2026-04-11 02:43:39:  GET / 200 in 1310ms (next.js: 126ms, application-code: 1184ms)
+2026-04-11 02:46:59:  GET / 200 in 929ms (next.js: 19ms, application-code: 910ms)

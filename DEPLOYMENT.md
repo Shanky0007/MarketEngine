@@ -101,21 +101,77 @@
    PUBLISH_TIME_IST=08:00
    ```
 
-4. **Set Up Cron Job**
-   - In Railway dashboard, go to Publisher service
-   - Click "Settings" → "Cron"
-   - Add schedule: `30 1 * * *` (7:00 AM IST = 1:30 AM UTC)
-   - Command: `curl http://localhost:3003/api/trigger`
-
-   Or use Railway's Cron service:
-   - Create new service → Cron
-   - Schedule: `30 1 * * *`
-   - Command: `curl https://your-publisher-service.railway.app/api/trigger`
+4. **Set Up Scheduling** — see the dedicated [Scheduling](#scheduling) section below.
 
 5. **Deploy**
    - Railway auto-deploys on git push
    - Monitor logs in dashboard
    - Services restart automatically on failure
+
+---
+
+## Scheduling
+
+The pipelines do **not** run themselves — they are one-shot jobs invoked on a schedule.
+Nothing needs to stay on 24/7 at your end; the scheduler spins a container up, runs the
+job, and shuts it down. Pick **one** of the two options below (don't enable both, or jobs
+will run twice).
+
+All four jobs are driven by a single runner: `scripts/cron-runner.ts <job>`, where
+`<job>` is one of `daily`, `sector:morning`, `sector:midsession`, `sector:closing`.
+npm shortcuts exist for each: `npm run cron:daily`, `npm run cron:sector:morning`, etc.
+
+| Job                  | When (IST, Mon–Fri) | Cron (UTC)        | What it does                          |
+|----------------------|---------------------|-------------------|---------------------------------------|
+| `daily`              | 08:00 (pre-market)  | `30 2 * * 1-5`    | Generate + publish the daily brief    |
+| `sector:morning`     | 09:30               | `0 4 * * 1-5`     | Sector pulse opening snapshot         |
+| `sector:midsession`  | 12:30               | `0 7 * * 1-5`     | Sector pulse mid-session snapshot     |
+| `sector:closing`     | 15:45               | `15 10 * * 1-5`   | Sector pulse closing snapshot         |
+
+Required env for every job: `DATABASE_URL`, `TINYFISH_API_KEY`, `OPENAI_API_KEY`
+(plus optional `SUBSTACK_*`, `SLACK_WEBHOOK_URL`).
+
+### Option A — Railway Cron (recommended if already on Railway)
+
+Railway cannot define multiple services from one file, so create **four** cron services
+(New → Empty Service → same repo) and set, on each one's **Settings**:
+- **Cron Schedule** → the UTC value from the table above
+- **Custom Start Command** → the matching `npm run cron:…` command
+- the same environment variables as the worker services
+
+The reference values are in [`railway.cron.json`](./railway.cron.json).
+
+### Option B — GitHub Actions (zero infra, free)
+
+Already wired in [`.github/workflows/scheduled-pipelines.yml`](./.github/workflows/scheduled-pipelines.yml).
+Add the secrets under **Repo Settings → Secrets and variables → Actions**
+(`DATABASE_URL`, `TINYFISH_API_KEY`, `OPENAI_API_KEY`, optional `SUBSTACK_*`, `SLACK_WEBHOOK_URL`).
+The schedules fire automatically; you can also run any job on demand from the **Actions**
+tab via **Run workflow**.
+
+### Data-source reliability
+
+Exchange/regulator sites (NSE, BSE, SEBI) are bot-hostile and frequently time out with
+TinyFish's lightweight browser. On the **free tier** the only valid settings are
+`browser_profile: "lite"` + no proxy + **max 2 concurrent agents** — other values return
+HTTP 400. The runner defaults to concurrency 2 for this reason; tune with:
+
+```
+TINYFISH_CONCURRENCY=2          # raise only on a paid plan
+TINYFISH_BROWSER_PROFILE=lite   # paid plans may support other profiles
+TINYFISH_PROXY=false            # paid plans may support a proxy
+```
+
+Even at concurrency 2, some exchange pages may still time out intermittently on the free
+tier — sector scores will then be `[partial]`. Reliable full-coverage data requires a paid
+TinyFish plan that supports a heavier browser profile / residential proxy.
+
+### Honest empty state vs. demo data
+
+The dashboard shows **real** data when the DB has scores, an **honest "no data yet"**
+banner when it doesn't, and an **error** banner if the DB is unreachable. It only shows
+sample/demo numbers when you explicitly set `USE_MOCK_DATA=true` (useful for a UI demo
+before the first pipeline run).
 
 ---
 
@@ -153,16 +209,16 @@ If you need public endpoints:
 - [ ] Check logs for errors
 - [ ] Test ingestion endpoint: `curl https://ingestion-url/health`
 - [ ] Test synthesis endpoint: `curl https://synthesis-url/health`
-- [ ] Manually trigger pipeline: `curl -X POST https://publisher-url/api/trigger`
-- [ ] Verify brief appears in Supabase database
+- [ ] Manually run a job: `npm run cron:sector:morning` (or trigger from the GitHub Actions tab)
+- [ ] Verify rows appear in Supabase (`sector_scores` / `briefs`)
 - [ ] Check Slack notification received
 
-### Verify Cron Job
-- [ ] Wait for scheduled time (7:00 AM IST)
-- [ ] Check Railway logs for cron execution
-- [ ] Verify new brief generated
-- [ ] Check Substack publication
-- [ ] Verify web app shows new brief
+### Verify Schedule
+- [ ] Confirm cron services / Actions schedules are set (see [Scheduling](#scheduling))
+- [ ] Run one job manually and check logs for clean completion
+- [ ] Verify new rows in the database after the run
+- [ ] Verify the dashboard shows live data (no "no data" / "demo data" banner)
+- [ ] For the daily brief: check Substack publication (or HTML fallback in `output/`)
 
 ---
 
@@ -200,11 +256,18 @@ If you need public endpoints:
 4. Check Supabase connection string
 5. Verify service ports not conflicting
 
-### Cron Job Not Running
-1. Check Railway cron logs
-2. Verify schedule format (UTC time)
-3. Test manual trigger endpoint
-4. Check service health before cron runs
+### Scheduled Job Not Running
+1. Check the cron service logs (Railway) or the run history (GitHub Actions tab)
+2. Verify schedule format is UTC (see the [Scheduling](#scheduling) table)
+3. Run the job manually: `npm run cron:sector:morning` — confirm it exits cleanly
+4. Confirm `DATABASE_URL`, `TINYFISH_API_KEY`, `OPENAI_API_KEY` are set on the job env
+
+### Sector Scores Come Back `[partial]` / Mostly 50
+1. Agents are timing out on NSE/BSE/SEBI — this is a TinyFish free-tier limitation
+2. Confirm `TINYFISH_CONCURRENCY=2` (free-tier cap); higher values throttle and time out
+3. Check the cron-runner log for `TIMEOUT` lines to see which agents failed
+4. A score of 50 with `data_completeness 0` means no signals were captured for that sector
+5. Reliable full coverage needs a paid TinyFish plan (heavier browser profile / proxy)
 
 ### Briefs Not Publishing
 1. Check all 3 legal gates passing

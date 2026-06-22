@@ -1,0 +1,76 @@
+name: Scheduled Pipelines
+
+# Runs the Niftea pipelines on a schedule using GitHub-hosted runners.
+# Nothing stays on at your end — GitHub spins up a runner at each cron tick,
+# runs the one-shot job, and shuts it down. This is the zero-infra, no-24/7
+# option (alternative to Railway Cron; pick ONE so jobs don't double-run).
+#
+# Schedules are UTC. IST = UTC+5:30. NSE trades 09:15-15:30 IST (Mon-Fri).
+#
+# Required GitHub repo secrets (Settings > Secrets and variables > Actions):
+#   DATABASE_URL, TINYFISH_API_KEY, OPENAI_API_KEY
+#   (optional) SUBSTACK_API_KEY, SUBSTACK_PUBLICATION_ID, SLACK_WEBHOOK_URL
+
+on:
+  schedule:
+    - cron: '30 2 * * 1-5'   # 08:00 IST — daily brief
+    - cron: '0 4 * * 1-5'    # 09:30 IST — sector morning
+    - cron: '0 7 * * 1-5'    # 12:30 IST — sector midsession
+    - cron: '15 10 * * 1-5'  # 15:45 IST — sector closing
+  workflow_dispatch:
+    # Manual trigger from the Actions tab — pick a job to run on demand.
+    inputs:
+      job:
+        description: 'Job to run'
+        required: true
+        default: 'sector:morning'
+        type: choice
+        options:
+          - daily
+          - sector:morning
+          - sector:midsession
+          - sector:closing
+
+jobs:
+  run-pipeline:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - run: npm ci
+
+      - name: Resolve job from schedule or manual input
+        id: resolve
+        env:
+          DISPATCH_JOB: ${{ github.event.inputs.job }}
+          SCHEDULE: ${{ github.event.schedule }}
+        run: |
+          if [ -n "$DISPATCH_JOB" ]; then
+            JOB="$DISPATCH_JOB"
+          else
+            case "$SCHEDULE" in
+              '30 2 * * 1-5')  JOB='daily' ;;
+              '0 4 * * 1-5')   JOB='sector:morning' ;;
+              '0 7 * * 1-5')   JOB='sector:midsession' ;;
+              '15 10 * * 1-5') JOB='sector:closing' ;;
+              *) echo "Unknown schedule: $SCHEDULE" && exit 1 ;;
+            esac
+          fi
+          echo "job=$JOB" >> "$GITHUB_OUTPUT"
+          echo "Resolved job: $JOB"
+
+      - name: Run pipeline
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          TINYFISH_API_KEY: ${{ secrets.TINYFISH_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          SUBSTACK_API_KEY: ${{ secrets.SUBSTACK_API_KEY }}
+          SUBSTACK_PUBLICATION_ID: ${{ secrets.SUBSTACK_PUBLICATION_ID }}
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+        run: npx tsx scripts/cron-runner.ts "${{ steps.resolve.outputs.job }}"

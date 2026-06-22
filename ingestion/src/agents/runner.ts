@@ -4,7 +4,16 @@ import type { SignalPayloadType } from 'shared-types';
 const TINYFISH_API = 'https://agent.tinyfish.ai/v1';
 const POLL_INTERVAL_MS = 3000;
 const AGENT_TIMEOUT_MS = 300_000; // 5 minutes — generous for complex sites
-const CONCURRENCY_LIMIT = 6;
+
+// Free-tier defaults (validated): "lite" profile, no proxy, max 2 concurrent.
+// Running more agents at once throttles them on the free plan and causes the
+// timeouts seen on heavy exchange pages (NSE/BSE/SEBI). Raise concurrency only
+// on a paid plan via TINYFISH_CONCURRENCY. browser_profile/proxy are exposed for
+// paid plans that support them — but on the free tier only "lite"/false are valid
+// (other values return HTTP 400).
+const BROWSER_PROFILE = process.env.TINYFISH_BROWSER_PROFILE || 'lite';
+const PROXY_ENABLED = process.env.TINYFISH_PROXY === 'true';
+const CONCURRENCY_LIMIT = Math.max(1, Number(process.env.TINYFISH_CONCURRENCY) || 2);
 
 function getApiKey(): string {
   return process.env.TINYFISH_API_KEY!;
@@ -26,8 +35,8 @@ async function runSingleAgent(config: AgentConfig): Promise<SignalPayloadType> {
       {
         url: config.url,
         goal: config.goal,
-        browser_profile: "lite",
-        proxy_config: { enabled: false }
+        browser_profile: BROWSER_PROFILE,
+        proxy_config: { enabled: PROXY_ENABLED }
       },
       { headers: { "X-API-Key": getApiKey(), "Content-Type": "application/json" } }
     );

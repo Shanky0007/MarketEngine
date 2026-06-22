@@ -16,7 +16,12 @@
     "test:runner": "tsx scripts/test-runner.ts",
     "backfill": "tsx scripts/backfill-briefs.ts",
     "verify:deployment": "tsx scripts/verify-deployment.ts",
-    "setup:deployment": "bash scripts/setup-deployment.sh"
+    "setup:deployment": "bash scripts/setup-deployment.sh",
+    "cron": "tsx scripts/cron-runner.ts",
+    "cron:daily": "tsx scripts/cron-runner.ts daily",
+    "cron:sector:morning": "tsx scripts/cron-runner.ts sector:morning",
+    "cron:sector:midsession": "tsx scripts/cron-runner.ts sector:midsession",
+    "cron:sector:closing": "tsx scripts/cron-runner.ts sector:closing"
   },
   "devDependencies": {
     "@types/pg": "^8.20.0",

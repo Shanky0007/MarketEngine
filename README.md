@@ -6,12 +6,8 @@ A legally-defensible market intelligence system that transforms expert signals i
 
 Ready to deploy to production?
 
-**[DEPLOYMENT-QUICKSTART.md](./DEPLOYMENT-QUICKSTART.md)** - Complete deployment guide (start here!)
-
-Additional resources:
-- [DEPLOYMENT.md](./DEPLOYMENT.md) - Detailed deployment instructions
-- [PRE-DEPLOYMENT-CHECKLIST.md](./PRE-DEPLOYMENT-CHECKLIST.md) - Complete before deploying
-- [LAUNCH_CHECKLIST.md](./LAUNCH_CHECKLIST.md) - Pre-launch verification
+- **[DEPLOYMENT.md](./DEPLOYMENT.md)** — full deployment guide (Railway services + cron, Vercel web, env vars)
+- **[SUPABASE-SETUP.md](./SUPABASE-SETUP.md)** — database setup and migrations
 
 ## Features
 
@@ -91,4 +87,6 @@ This is a monorepo using npm workspaces. Each service is independently deployabl
 
 ## Legal Compliance
 
-See [LAUNCH_CHECKLIST.md](./LAUNCH_CHECKLIST.md) for pre-release requirements.
+Every brief passes three automated gates (see **Architecture** above) before it can be
+published. Scores and briefs are informational only — Niftea is not a SEBI-registered
+investment adviser, and the canonical disclaimer is enforced on every output.

@@ -2,6 +2,7 @@
 
 import { useEffect, useState, useCallback, useRef } from 'react';
 import type { SectorScoreType, AnomalyEventType } from 'shared-types';
+import type { DataSource } from '../../../lib/sectorData';
 import SectorGrid, { type SectorGridHandle } from './SectorGrid';
 import AnomalyBanner from './AnomalyBanner';
 
@@ -10,11 +11,13 @@ const POLL_INTERVAL_MS = 60_000;
 interface LiveDashboardProps {
   initialScores: SectorScoreType[];
   initialAnomalies: AnomalyEventType[];
+  initialSource: DataSource;
 }
 
-export default function LiveDashboard({ initialScores, initialAnomalies }: LiveDashboardProps) {
+export default function LiveDashboard({ initialScores, initialAnomalies, initialSource }: LiveDashboardProps) {
   const [scores, setScores] = useState(initialScores);
   const [anomalies, setAnomalies] = useState(initialAnomalies);
+  const [source, setSource] = useState<DataSource>(initialSource);
   const [mode, setMode] = useState<'simple' | 'detailed'>('simple');
   const [lastUpdated, setLastUpdated] = useState<Date | null>(() => {
     if (initialScores.length === 0) return null;
@@ -39,13 +42,15 @@ export default function LiveDashboard({ initialScores, initialAnomalies }: LiveD
       if (!res.ok) return;
       const data = await res.json();
 
+      if (data.source) setSource(data.source as DataSource);
       if (data.scores?.length > 0) {
         setScores(data.scores);
         setLastUpdated(new Date(Math.max(...data.scores.map((s: SectorScoreType) => new Date(s.computed_at).getTime()))));
+      } else {
+        setScores([]);
+        setLastUpdated(null);
       }
-      if (data.anomalies) {
-        setAnomalies(data.anomalies);
-      }
+      setAnomalies(data.anomalies ?? []);
     } catch {
       // Silently ignore — will retry on next interval
     }
@@ -117,6 +122,38 @@ export default function LiveDashboard({ initialScores, initialAnomalies }: LiveD
           </div>
         </div>
       </div>
+
+      {/* Data-source banner — surfaces non-live states instead of silently faking data */}
+      {source !== 'live' && (
+        <div
+          className="rounded-lg px-4 py-3 text-[13px] leading-relaxed"
+          style={{
+            border: '1px solid var(--border)',
+            background: 'rgba(251,191,36,0.06)',
+            color: 'var(--text-muted)',
+          }}
+        >
+          {source === 'empty' && (
+            <>
+              <strong style={{ color: 'var(--text-primary)' }}>No scores yet.</strong>{' '}
+              The pipeline hasn&apos;t produced data. Scores appear after the next scheduled run
+              (morning / mid-session / closing on trading days).
+            </>
+          )}
+          {source === 'error' && (
+            <>
+              <strong style={{ color: 'var(--text-primary)' }}>Data temporarily unavailable.</strong>{' '}
+              Could not reach the scores database. Retrying automatically.
+            </>
+          )}
+          {source === 'mock' && (
+            <>
+              <strong style={{ color: 'var(--text-primary)' }}>Demo data.</strong>{' '}
+              Showing sample values (<code>USE_MOCK_DATA</code> is on) — not live market data.
+            </>
+          )}
+        </div>
+      )}
 
       {/* Anomaly banner */}
       <AnomalyBanner anomalies={anomalies} onScrollToSector={handleScrollToSector} />

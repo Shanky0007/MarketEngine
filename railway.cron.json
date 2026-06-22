@@ -1,0 +1,37 @@
+{
+  "$schema": "https://railway.com/railway.schema.json",
+  "_comment": [
+    "Reference config for the FOUR Railway Cron services that drive Niftea.",
+    "Railway cron services run a one-shot command on a schedule, then the",
+    "container sleeps until the next tick — you only pay for run time, and",
+    "nothing has to stay on at your end.",
+    "",
+    "Railway does NOT support multiple services from one railway.json, so create",
+    "each cron as its own service in the Railway dashboard (New > Empty Service,",
+    "same repo) and paste the matching values below. See DEPLOYMENT.md > Scheduling.",
+    "",
+    "Schedules are in UTC. IST = UTC+5:30. NSE trades 09:15-15:30 IST (Mon-Fri)."
+  ],
+  "services": {
+    "cron-daily-brief": {
+      "startCommand": "npm run cron:daily",
+      "cronSchedule": "30 2 * * 1-5",
+      "_when": "08:00 IST (pre-market) Mon-Fri — generates & publishes the daily brief"
+    },
+    "cron-sector-morning": {
+      "startCommand": "npm run cron:sector:morning",
+      "cronSchedule": "0 4 * * 1-5",
+      "_when": "09:30 IST Mon-Fri — sector pulse opening snapshot"
+    },
+    "cron-sector-midsession": {
+      "startCommand": "npm run cron:sector:midsession",
+      "cronSchedule": "0 7 * * 1-5",
+      "_when": "12:30 IST Mon-Fri — sector pulse mid-session snapshot"
+    },
+    "cron-sector-closing": {
+      "startCommand": "npm run cron:sector:closing",
+      "cronSchedule": "15 10 * * 1-5",
+      "_when": "15:45 IST Mon-Fri — sector pulse closing snapshot"
+    }
+  }
+}
